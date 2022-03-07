@@ -6,7 +6,6 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Github Community Guidelines](#github-community-guidelines)
 - [Wiki Home Page](#wiki-home-page)
 - [Credits](#credits)
-- [Organization Sprint 0](#organization-sprint-0)
 
 
 ### Runtime Link
@@ -47,11 +46,3 @@ Jun Lim | Primary Designer and Github Admin | [@Dylanluo05](https://github.com/D
 Connor Wang | Scrum Team Technical Officer | [@isabelle926](https://github.com/isabelle926) | [Tasks and Issues](https://github.com/Dylanluo05/Daji-Coders/issues/assigned/isabelle926) | [Scrum Board](https://github.com/Dylanluo05/Daji-Coders/projects/1)  | [Commits](https://github.com/Dylanluo05/Daji-Coders/commits?author=isabelle926) |[Dylan Luo and Isabelle Gunawan Journal](https://docs.google.com/document/d/1LDHFMI3j1qDKWwgjiuCrH2cgK1KQCoKsQF3OOdGBvIw/edit?usp=sharing) |
 Aidan Wu | Deployment Manager | [@AlexD017](https://github.com/AlexD017) | [Tasks and Issues](https://github.com/Dylanluo05/Daji-Coders/issues/assigned/AlexD017) | [Scrum Board](https://github.com/Dylanluo05/Daji-Coders/projects/1)  | [Commits](https://github.com/Dylanluo05/Daji-Coders/commits?author=AlexD017) |[Jean Kim and Alex Do Journal](https://docs.google.com/document/d/1Z-1t7JIvJnqctDlQt7ALcxyDKhtoPdDNBLIA8d82Qgo/edit?usp=sharing) |
 
-### Organization Sprint 0
-
-Name | Requirements | Evidence |
----- | ------------ | -------- |
-Jean Kim | College Board Quizzes 1.1 and 1.2 | [Jean Kim and Alex Do Journal](https://docs.google.com/document/d/1Z-1t7JIvJnqctDlQt7ALcxyDKhtoPdDNBLIA8d82Qgo/edit?usp=sharing)
-Dylan Luo | College Board Quizzes 1.1 and 1.2 | [Dylan Luo and Isabelle Gunawan Journal](https://docs.google.com/document/d/1LDHFMI3j1qDKWwgjiuCrH2cgK1KQCoKsQF3OOdGBvIw/edit?usp=sharing) 
-Isabelle Gunawan | College Board Quizzes 1.1 and 1.2 | [Dylan Luo and Isabelle Gunawan Journal](https://docs.google.com/document/d/1LDHFMI3j1qDKWwgjiuCrH2cgK1KQCoKsQF3OOdGBvIw/edit?usp=sharing) 
-Alex Do | College Board Quizzes 1.1 and 1.2 | [Jean Kim and Alex Do Journal](https://docs.google.com/document/d/1Z-1t7JIvJnqctDlQt7ALcxyDKhtoPdDNBLIA8d82Qgo/edit?usp=sharing)
