@@ -7,6 +7,9 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Wiki Home Page](#wiki-home-page)
 - [Credits](#credits)
 
+#Wire Frame
+![ppoowireframe](https://user-images.githubusercontent.com/89223703/157766928-ad178bc4-ae5d-4051-8981-dc0fe73bf5d1.png)
+
 
 ### Runtime Link
 
