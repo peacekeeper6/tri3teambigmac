@@ -7,6 +7,9 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Wiki Home Page](#wiki-home-page)
 - [Credits](#credits)
 
+# About Us
+The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences
+
 ![ppoowireframe](https://user-images.githubusercontent.com/89223703/157766928-ad178bc4-ae5d-4051-8981-dc0fe73bf5d1.png)
 
 
