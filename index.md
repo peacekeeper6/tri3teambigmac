@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+# Team Project: Period 5 Team Big Mac
+Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 
-You can use the [editor on GitHub](https://github.com/jeankim05/tri3teambigmac/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Table of Contents
+- [Runtime Link](#runtime-link)
+- [Project Details, Guidelines, and Information](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
+- [Credits](#credits)
+- [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Runtime Link
+To be determined!
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Project Details, Guidelines, and Information
+- [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki)
+- [Link to team wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
+- The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Credits
+- [Team Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)
+- [Team Insights Graphs](https://github.com/jeankim05/tri3teambigmac/graphs/contributors)
 
-- Bulleted
-- List
+Contributor | Individual Repositories | GitHub | Tasks and Issues | Scrum Board | Commits | Individual Github Pages |
+----------- | ---- | ------ | ---------------- | ----------- | ------- | ---------------- |
+Jean Kim (Scrum Master and Github Admin) | [Link to repository](https://github.com/jeankim05/jeanapcsptri3) | [@jeankim05](https://github.com/jeankim05) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/jeankim05) | [Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=jeankim05) | [Link to Individual Github Page Jean](https://jeankim05.github.io/jeanapcsptri3/datastructures) |
+Jun Lim (Deployment Manager) | [Link to repository](https://github.com/peacekeeper6/Jun-CSP-Project) | [@peacekeeper6](https://github.com/peacekeeper6) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/peacekeeper6) | [Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=peacekeeper6) |
+Connor Wang (Primary Designer) | [Link to repository](https://github.com/connorw72/connorapcsptri3) | [@connorw72](https://github.com/connorw72) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/connorw72) | [Scrum Board]()  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=connorw72) |[Connor Individual Github Page](https://connorw72.github.io/connorapcsptri3/) |
+Aidan Wu (Technical Officer) | [Link to repository](https://github.com/aidanywu/apcsptri3) | [@aidanywu](https://github.com/aidanywu) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/aidanywu) | [Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1?card_filter_query=assignee%3Awillcyber)  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=aidanywu) |
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jeankim05/tri3teambigmac/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Week 0
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/2) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1)
+Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/3) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1)
+Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/4) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1)
+Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/5) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1)
