@@ -3,35 +3,17 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 
 ## Table of Contents
 - [Runtime Link](#runtime-link)
-- [Github Community Guidelines](#github-community-guidelines)
-- [Wiki Home Page](#wiki-home-page)
+- [Project Details, Guidelines, and Information](#wiki-home-page)
 - [Credits](#credits)
 - [Week 0]()
 
 
-### Runtime Link
-- To Be Determined!
 
-### Github Community Guidelines
-- 
-
-### Wiki Home Page
+### Project Details, Guidelines, and Information
 - [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki)
+- [Link to team wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
+- The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences
 
-#### Project / Website Description
-The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences
-
-#### Project / Website Navigation Guide
-- 
-
-#### Project / Website Wire Frames
-- [dnppoo wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
-
-#### Project / Website Technicals
-- 
-
-#### Project / Website Scrum Board and README Guidelines
-- 
 
 ### Credits
 - [Team Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)
