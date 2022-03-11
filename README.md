@@ -3,7 +3,7 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 
 ## Table of Contents
 - [Runtime Link](#runtime-link)
-- [Project Details, Guidelines, and Information](#wiki-home-page)
+- [Project Details, Guidelines, and Information](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
 - [Credits](#credits)
 - [Week 0]()
 
