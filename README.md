@@ -31,7 +31,7 @@ Aidan Wu (Technical Officer) | [Link to repository](https://github.com/aidanywu/
 
 ### Week 0
 Name | Requirements | Evidence | Grade |
----- | ------------ | -------- | ----- |
+---- | ------------ | -------- | 
 Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/2) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
 Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/3) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
 Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/4) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
