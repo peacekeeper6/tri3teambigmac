@@ -5,7 +5,7 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Runtime Link](#runtime-link)
 - [Project Details, Guidelines, and Information](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
 - [Credits](#credits)
-- [Week 0]()
+- [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
 
 
 ### Runtime Link
@@ -31,7 +31,7 @@ Aidan Wu (Technical Officer) | [Link to repository](https://github.com/aidanywu/
 ### Week 0
 Name | Requirements | Evidence | Grade |
 ---- | ------------ | -------- | ----- |
-Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup |
-Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup |
-Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | 
-Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | 
+Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/2) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1)
+Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/3) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1)
+Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/4) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1)
+Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/5) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1)
