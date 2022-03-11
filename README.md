@@ -15,7 +15,7 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - 
 
 ### Wiki Home Page
-- 
+- [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki)
 
 #### Project / Website Description
 The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences
@@ -27,8 +27,8 @@ The club Project Protect Our Ocean has tasked us with creating a website to help
 - 
 
 #### Project / Website Wire Frames
-- 
-![dnppoo wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
+- ![dnppoo wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
+
 #### Project / Website Technicals
 - 
 
