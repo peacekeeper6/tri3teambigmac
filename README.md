@@ -1,4 +1,4 @@
-# Team Project: Period 5 Team Big Mac: 
+# Team Project: Period 5 Team Big Mac
 Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 
 ## Table of Contents
