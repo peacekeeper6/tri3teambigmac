@@ -6,10 +6,11 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Github Community Guidelines](#github-community-guidelines)
 - [Wiki Home Page](#wiki-home-page)
 - [Credits](#credits)
+- [Week 0]()
 
 
 ### Runtime Link
-
+- To Be Determined!
 
 ### Github Community Guidelines
 - 
@@ -24,7 +25,7 @@ The club Project Protect Our Ocean has tasked us with creating a website to help
 - 
 
 #### Project / Website Wire Frames
-- ![dnppoo wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
+- [dnppoo wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
 
 #### Project / Website Technicals
 - 
@@ -43,3 +44,10 @@ Jun Lim (Deployment Manager) | [Link to repository](https://github.com/peacekeep
 Connor Wang (Primary Designer) | [Link to repository](https://github.com/connorw72/connorapcsptri3) | [@connorw72](https://github.com/connorw72) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/connorw72) | [Scrum Board]()  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=connorw72) |[Connor Individual Github Page](https://connorw72.github.io/connorapcsptri3/) |
 Aidan Wu (Technical Officer) | [Link to repository](https://github.com/aidanywu/apcsptri3) | [@aidanywu](https://github.com/aidanywu) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/aidanywu) | [Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1?card_filter_query=assignee%3Awillcyber)  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=aidanywu) |
 
+### Week 0
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup |
+Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup |
+Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | 
+Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | 
