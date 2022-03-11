@@ -7,12 +7,6 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Wiki Home Page](#wiki-home-page)
 - [Credits](#credits)
 
-# About Us
-The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences
-
-![dnppoo wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
-
-
 
 ### Runtime Link
 
@@ -24,7 +18,7 @@ The club Project Protect Our Ocean has tasked us with creating a website to help
 - 
 
 #### Project / Website Description
-- 
+The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences
 
 #### Project / Website Navigation Guide
 - 
@@ -34,7 +28,7 @@ The club Project Protect Our Ocean has tasked us with creating a website to help
 
 #### Project / Website Wire Frames
 - 
-
+![dnppoo wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
 #### Project / Website Technicals
 - 
 
