@@ -8,6 +8,8 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Week 0]()
 
 
+### Runtime Link
+To be determined!
 
 ### Project Details, Guidelines, and Information
 - [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki)
