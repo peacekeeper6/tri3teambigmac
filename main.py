@@ -19,10 +19,6 @@ def signin():
 def signup():
     return render_template("sign-up.html")
 
-@app.route('/stub/')
-def stub():
-    return render_template("stub.html")
-
 
 # runs the application on the development server
 if __name__ == "__main__":
