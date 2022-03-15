@@ -11,7 +11,6 @@ def index():
     return render_template("index.html")
 
 
-# connects /kangaroos path to render kangaroos.html
 @app.route('/signin')
 def signin():
     return render_template("sign-in.html")
