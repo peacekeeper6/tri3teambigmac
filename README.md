@@ -7,6 +7,8 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Credits](#credits)
 - [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
 
+# Review Ticket Week 1
+[Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/22)
 
 ### Runtime Link
 To be determined!
@@ -14,8 +16,11 @@ To be determined!
 ### Project Details, Guidelines, and Information
 Current Home Page
 <img width="1439" alt="image" src="https://user-images.githubusercontent.com/89223703/158894872-8ea144bf-b270-49eb-a17e-ed57ddb430fa.png">
-Other Pages
-[Wireframe Sign-In](https://user-images.githubusercontent.com/89223703/158897074-32506826-99a8-40d6-9516-efa76bc1343b.png)
+Other Pages:
+* Wireframe Sign-In
+  * ![Wireframe Sign-In](https://user-images.githubusercontent.com/89223703/158897129-34b3c8e7-514c-4ec0-b7e5-392c2c6e4963.png)
+* Wireframe Calendar/Event page
+  * ![Wireframe - Get involved_ Calendar](https://user-images.githubusercontent.com/89223703/158898667-7434bfcf-8d9a-4c56-a2f7-2f626b0b66d7.png)
 #### Important Links
 [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki) // 
 [Link to team wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
