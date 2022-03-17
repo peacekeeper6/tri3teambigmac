@@ -9,6 +9,14 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 
 # Review Ticket Week 1
 [Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/22)
+* Project owner initial requirement is to make a way for people to join the club through the website. He wants the ability for people to input their information and for him to be able to read and receive the info. Making this will be the current top priority, which will include a sign in and sign up.
+* Requirements and Jobs assigned to each individuals listed on Scrum Board, including at least one in progress task
+| Job | Assignment |
+---- | ------------ |
+Incorporate Administration | [In Progress Task (scrum board issue)](https://github.com/jeankim05/tri3teambigmac/issues/11)
+Communication with Members | [In Progress Task (scrum board issue)](https://github.com/jeankim05/tri3teambigmac/issues/12)
+Register as a Club Member | [In Progress Task (scrum board issue)](https://github.com/jeankim05/tri3teambigmac/issues/10)
+Home Page | [In Progress Task (scrum board issue)](https://github.com/jeankim05/tri3teambigmac/issues/20)
 
 ### Runtime Link
 To be determined!
