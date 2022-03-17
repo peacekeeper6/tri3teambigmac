@@ -15,8 +15,9 @@ To be determined!
 Current Home Page
 <img width="1439" alt="image" src="https://user-images.githubusercontent.com/89223703/158894872-8ea144bf-b270-49eb-a17e-ed57ddb430fa.png">
 Other Pages:
-* [Wireframe Sign-In](https://user-images.githubusercontent.com/89223703/158897074-32506826-99a8-40d6-9516-efa76bc1343b.png)
-* [Wireframe Calendar/Event page]
+* Wireframe Sign-In
+  * 
+* Wireframe Calendar/Event page
   * ![Wireframe - Get involved_ Calendar](https://user-images.githubusercontent.com/89223703/158898667-7434bfcf-8d9a-4c56-a2f7-2f626b0b66d7.png)
 #### Important Links
 [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki) // 
