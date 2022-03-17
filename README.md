@@ -10,11 +10,12 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 
 ### Runtime Link
 To be determined!
-![Wireframe Sign-In](https://user-images.githubusercontent.com/89223703/158897074-32506826-99a8-40d6-9516-efa76bc1343b.png)
 
 ### Project Details, Guidelines, and Information
 Current Home Page
 <img width="1439" alt="image" src="https://user-images.githubusercontent.com/89223703/158894872-8ea144bf-b270-49eb-a17e-ed57ddb430fa.png">
+Other Pages
+[Wireframe Sign-In](https://user-images.githubusercontent.com/89223703/158897074-32506826-99a8-40d6-9516-efa76bc1343b.png)
 #### Important Links
 [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki) // 
 [Link to team wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
