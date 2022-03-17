@@ -10,6 +10,7 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 
 ### Runtime Link
 To be determined!
+![Wireframe Sign-In](https://user-images.githubusercontent.com/89223703/158897074-32506826-99a8-40d6-9516-efa76bc1343b.png)
 
 ### Project Details, Guidelines, and Information
 Current Home Page
