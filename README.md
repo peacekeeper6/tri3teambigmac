@@ -12,10 +12,13 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 To be determined!
 
 ### Project Details, Guidelines, and Information
-- [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki)
-- [Link to team wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
-- The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences.
-- Our project ideas and plans include deployment of our website, utilizing all requests from our sponsor (leaders of the club Project Protect Our Ocean), and adding in technicals that can be easily implemented and read by users. Specifics include pages that allow users to learn more about oceans, oceanagraphy, the current state of our oceans, and what they can do to contribute, donate, or join the club.
+Current Home Page
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/89223703/158894872-8ea144bf-b270-49eb-a17e-ed57ddb430fa.png">
+#### Important Links
+[Wiki](https://github.com/jeankim05/tri3teambigmac/wiki) // 
+[Link to team wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
+#### Information
+The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences. Our project ideas and plans include deployment of our website, utilizing all requests from our sponsor (leaders of the club Project Protect Our Ocean), and adding in technicals that can be easily implemented and read by users. Specifics include pages that allow users to learn more about oceans, oceanagraphy, the current state of our oceans, and what they can do to contribute, donate, or join the club.
 
 
 ### Credits
@@ -25,7 +28,7 @@ To be determined!
 Contributor | Individual Repositories | GitHub | Tasks and Issues | Scrum Board | Commits | Individual Github Pages |
 ----------- | ---- | ------ | ---------------- | ----------- | ------- | ---------------- |
 Jean Kim (Scrum Master and Github Admin) | [Link to repository](https://github.com/jeankim05/jeanapcsptri3) | [@jeankim05](https://github.com/jeankim05) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/jeankim05) | [Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=jeankim05) | [Link to Individual Github Page Jean](https://jeankim05.github.io/jeanapcsptri3/datastructures) |
-Jun Lim (Deployment Manager) | [Link to repository](https://github.com/peacekeeper6/Jun-CSP-Project) | [@peacekeeper6](https://github.com/peacekeeper6) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/peacekeeper6) | [Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=peacekeeper6) |
+Jun Lim (Deployment Manager) | [Link to repository](https://github.com/peacekeeper6/Jun-CSP-Project) | [@peacekeeper6](https://github.com/peacekeeper6) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/peacekeeper6) | [Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=peacekeeper6) | [Link to Jun Individual Github Page](https://peacekeeper6.github.io/Jun-CSP-Project/)
 Connor Wang (Primary Designer) | [Link to repository](https://github.com/connorw72/connorapcsptri3) | [@connorw72](https://github.com/connorw72) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/connorw72) | [Scrum Board]()  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=connorw72) |[Connor Individual Github Page](https://connorw72.github.io/connorapcsptri3/) |
 Aidan Wu (Technical Officer) | [Link to repository](https://github.com/aidanywu/apcsptri3) | [@aidanywu](https://github.com/aidanywu) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/aidanywu) | [Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1?card_filter_query=assignee%3Awillcyber)  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=aidanywu) |
 
