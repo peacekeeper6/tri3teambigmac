@@ -1,7 +1,91 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/base.html" %}
-
-<!-- Setting up variables to customize "project" details to be specific to index page -->
-{% set project = "Portfolio" %}
-{% set overview = "https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter" %}
-{% set repo = "https://github.com/nighthawkcoders/flask_portfolio/" %}
+{% block head %}
+    <title> Project POO</title>
+    <link rel="stylesheet" href="/templates/css/index.css">
+    <style>
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/static/assets/oceanbackground.jpeg);
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: antiquewhite;
+        }
+        .content h1{
+            font-size: 70px;
+            margin-top: 80px;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid black;
+            background: transparent;
+            color: antiquewhite;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        span{
+            background: tan;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+        button:hover{
+            border: none;
+        }
+        .info{
+            background-color: lightblue;
+            opacity: 0.7;
+        }
+        .info h1{
+            color: black;
+            text-align: center;
+            font-family: Baskerville;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+    <body>
+    <div class="banner">
+        <img src="/static/assets/oceanbackground.jpeg" width="100%" height="100%">
+    </div>
+    <div class="content">
+        <h1>Project Protect Our Ocean</h1>
+        <p> Welcome to Del Norte's Project Protect Our Ocean Club website </p>
+        <div>
+            <button type="button" onclick="document.location='signin'"><span></span>Sign-In</button>
+            <button type="button"><span></span>Get Involved!</button>
+        </div>
+    </div>
+    <div class="info">
+        <h1>Get to know our club</h1>
+    </div>
+    </body>
+{% endblock %}
