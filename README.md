@@ -5,8 +5,8 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Runtime Link](#runtime-link)
 - [Project Details, Guidelines, and Information](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
 - [Credits](#credits)
-- [Week 0]()
-- [Week 1]()
+- [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-0)
+- [Week 1](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-1)
 
 # Review Ticket Week 1
 [Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/22)
@@ -56,6 +56,7 @@ Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Git
 Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/3) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
 Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/4) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
 Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/5) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
+Everyone | Review Ticket Week 0 | [Week 0 Review ticket](https://github.com/jeankim05/tri3teambigmac/issues/19)
 
 
 ### Week 1
@@ -65,3 +66,4 @@ Jean Kim | Individual Github Pages, PBL Feature: Club Information and Ocean Info
 Jun Lim | Individual Github Pages, PBL Feature: Register as a club member database | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/10)
 Connor Wang | Individual Github Pages, PBL Feature: Home Page, Incorporate Administration, Events Calendar | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/20) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/11) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/14)
 Aidan Wu | Individual Github Pages, PBL Feature: Communication with Members | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/12)
+Everyone | Review Ticket Week 1 | [Week 1 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/22)
