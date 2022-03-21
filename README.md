@@ -56,7 +56,7 @@ Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Git
 Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/3) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
 Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/4) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
 Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/5) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
-Everyone | Review Ticket Week 0 | [Week 0 Review ticket](https://github.com/jeankim05/tri3teambigmac/issues/19)
+Everyone | Review Ticket Week 0 | [Week 0 Review ticket](https://github.com/jeankim05/tri3teambigmac/issues/19) | Self Grade
 
 
 ### Week 1
