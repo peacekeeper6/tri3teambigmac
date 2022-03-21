@@ -5,7 +5,8 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Runtime Link](#runtime-link)
 - [Project Details, Guidelines, and Information](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
 - [Credits](#credits)
-- [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
+- [Week 0]()
+- [Week 1]()
 
 # Review Ticket Week 1
 [Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/22)
@@ -49,6 +50,15 @@ Connor Wang (Primary Designer) | [Link to repository](https://github.com/connorw
 Aidan Wu (Technical Officer) | [Link to repository](https://github.com/aidanywu/apcsptri3) | [@aidanywu](https://github.com/aidanywu) | [Tasks and Issues](https://github.com/jeankim05/tri3teambigmac/issues/assigned/aidanywu) | [Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1?card_filter_query=assignee%3Awillcyber)  | [Commits](https://github.com/jeankim05/tri3teambigmac/commits?author=aidanywu) | [Link to Aidan Individual Github Page](https://aidanywu.github.io/apcsptri3/)
 
 ### Week 0
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/2) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
+Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/3) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
+Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/4) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
+Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/5) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
+
+
+### Week 1
 Name | Requirements | Evidence | Grade |
 ---- | ------------ | -------- | ----- |
 Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/2) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
