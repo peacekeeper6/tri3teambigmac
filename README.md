@@ -5,19 +5,8 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Runtime Link](#runtime-link)
 - [Project Details, Guidelines, and Information](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
 - [Credits](#credits)
-- [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#project-details-guidelines-and-information)
-
-# Review Ticket Week 1
-[Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/22)
-* Project owner initial requirement is to make a way for people to join the club through the website. He wants the ability for people to input their information and for him to be able to read and receive the info. Making this will be the current top priority, which will include a sign in and sign up.
-* Requirements and Jobs assigned to each individuals listed on Scrum Board, including at least one in progress task
-
-| Job | Assignment |
----- | ------------ |
-Incorporate Administration | [In Progress Task (scrum board issue)](https://github.com/jeankim05/tri3teambigmac/issues/11)
-Communication with Members | [In Progress Task (scrum board issue)](https://github.com/jeankim05/tri3teambigmac/issues/12)
-Register as a Club Member | [In Progress Task (scrum board issue)](https://github.com/jeankim05/tri3teambigmac/issues/10)
-Home Page | [In Progress Task (scrum board issue)](https://github.com/jeankim05/tri3teambigmac/issues/20)
+- [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-0)
+- [Week 1](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-1)
 
 ### Runtime Link
 To be determined!
@@ -30,12 +19,13 @@ Other Pages:
   * ![Wireframe Sign-In](https://user-images.githubusercontent.com/89223703/158897129-34b3c8e7-514c-4ec0-b7e5-392c2c6e4963.png)
 * Wireframe Calendar/Event page
   * ![Wireframe - Get involved_ Calendar](https://user-images.githubusercontent.com/89223703/158898667-7434bfcf-8d9a-4c56-a2f7-2f626b0b66d7.png)
+
 #### Important Links
 [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki) // 
 [Link to team wireframe](https://user-images.githubusercontent.com/89223703/157785956-26c1d1e1-fd36-478f-9afa-6393f5f286fb.png)
+
 #### Information
 The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences. Our project ideas and plans include deployment of our website, utilizing all requests from our sponsor (leaders of the club Project Protect Our Ocean), and adding in technicals that can be easily implemented and read by users. Specifics include pages that allow users to learn more about oceans, oceanagraphy, the current state of our oceans, and what they can do to contribute, donate, or join the club.
-
 
 ### Credits
 - [Team Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)
@@ -55,3 +45,16 @@ Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Git
 Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/3) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
 Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/4) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
 Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/5) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
+Everyone | Review Ticket Week 0 | [Week 0 Review ticket](https://github.com/jeankim05/tri3teambigmac/issues/19) | Self Grade
+
+
+### Week 1
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Individual Github Pages, PBL Feature: Club Information and Ocean Information Pages | [Link to Scrum board Ticket](https://github.com/jeankim05/tri3teambigmac/issues/21) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/13)
+Jun Lim | Individual Github Pages, PBL Feature: Register as a club member database | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/10)
+Connor Wang | Individual Github Pages, PBL Feature: Home Page, Incorporate Administration, Events Calendar | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/20) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/11) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/14)
+Aidan Wu | Individual Github Pages, PBL Feature: Communication with Members | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/12)
+Everyone | Review Ticket Week 1 | [Week 1 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/22)
+* Project owner initial requirement is to make a way for people to join the club through the website. He wants the ability for people to input their information and for him to be able to read and receive the info. Making this will be the current top priority, which will include a sign in and sign up.
+* Requirements and Jobs assigned to each individuals listed on Scrum Board, including at least one in progress task
