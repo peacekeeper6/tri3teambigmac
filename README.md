@@ -61,7 +61,7 @@ Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Git
 ### Week 1
 Name | Requirements | Evidence | Grade |
 ---- | ------------ | -------- | ----- |
-Jean Kim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/2) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
-Jun Lim | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/3) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
-Connor Wang | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/4) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
-Aidan Wu | Individual Repository and Github Pages Setup, Team Repository and Github Pages Setup | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/5) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/1) | Self Grade
+Jean Kim | Individual Github Pages, PBL Feature: Club Information and Ocean Information Pages | [Link to Scrum board Ticket](https://github.com/jeankim05/tri3teambigmac/issues/21) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/13)
+Jun Lim | Individual Github Pages, PBL Feature: Register as a club member database | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/10)
+Connor Wang | Individual Github Pages, PBL Feature: Home Page, Incorporate Administration, Events Calendar | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/20) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/11) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/14)
+Aidan Wu | Individual Github Pages, PBL Feature: Communication with Members | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/12)
