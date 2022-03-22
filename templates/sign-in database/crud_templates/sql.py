@@ -1,5 +1,5 @@
 from __init__ import db
-from model import Users
+from crud.model import Users
 # import random
 
 

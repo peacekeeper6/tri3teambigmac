@@ -8,7 +8,7 @@ app = Flask(__name__)
 # connects default URL to render index.html
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("layouts/index.html")
 
 
 @app.route('/signin')

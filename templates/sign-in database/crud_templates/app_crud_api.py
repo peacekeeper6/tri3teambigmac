@@ -3,7 +3,7 @@ from flask import Blueprint, render_template
 from flask_restful import Api, Resource
 import requests
 
-import crud.sql
+from crud.sql import *
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 
@@ -21,7 +21,7 @@ api = Api(app_crud_api)
 @app_crud_api.route('/')
 def crud_api():
     """obtains all Users from table and loads Admin Form"""
-    return render_template("crud/crud_async.html", table=users_all())
+    return render_template("crud_async.html", table=users_all())
 
 
 """ API routes section """
