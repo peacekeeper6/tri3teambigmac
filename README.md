@@ -19,6 +19,8 @@ Other Pages:
   * ![Wireframe Sign-In](https://user-images.githubusercontent.com/89223703/158897129-34b3c8e7-514c-4ec0-b7e5-392c2c6e4963.png)
 * Wireframe Calendar/Event page
   * ![Wireframe - Get involved_ Calendar](https://user-images.githubusercontent.com/89223703/158898667-7434bfcf-8d9a-4c56-a2f7-2f626b0b66d7.png)
+* Wireframe About club leadership page
+  * ![Club leadership wireframe](https://user-images.githubusercontent.com/89223703/160060356-48b9133b-3065-46ce-aa69-fde5fbfa4449.png)
 
 #### Important Links
 [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki) // 
