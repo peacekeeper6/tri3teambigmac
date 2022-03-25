@@ -32,6 +32,9 @@ Other Pages:
 #### Information
 The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences. Our project ideas and plans include deployment of our website, utilizing all requests from our sponsor (leaders of the club Project Protect Our Ocean), and adding in technicals that can be easily implemented and read by users. Specifics include pages that allow users to learn more about oceans, oceanagraphy, the current state of our oceans, and what they can do to contribute, donate, or join the club.
 
+#### Sponsor - DNPPOO Club President
+Our sponsor has talked to us about what he wants. These meetings are further detailed in future progress and review. We are still deciding the license with him as he has not told us for sure what he wants yet. We have pointed towards the GNU GPLv3 license, but he has not given us the okay to use this license. We are waiting for them to tell us what license they want for sure.
+
 ### Credits
 - [Team Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)
 - [Team Insights Graphs](https://github.com/jeankim05/tri3teambigmac/graphs/contributors)
