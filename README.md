@@ -19,6 +19,11 @@ Other Pages:
   * ![Wireframe Sign-In](https://user-images.githubusercontent.com/89223703/158897129-34b3c8e7-514c-4ec0-b7e5-392c2c6e4963.png)
 * Wireframe Calendar/Event page
   * ![Wireframe - Get involved_ Calendar](https://user-images.githubusercontent.com/89223703/158898667-7434bfcf-8d9a-4c56-a2f7-2f626b0b66d7.png)
+* Wireframe About club leadership page
+  * ![Club leadership wireframe](https://user-images.githubusercontent.com/89223703/160060356-48b9133b-3065-46ce-aa69-fde5fbfa4449.png)
+* Project Key Workflow
+*  ![image](https://user-images.githubusercontent.com/60992581/160067978-78ed03b1-e9b2-4136-978a-4fbb1130e2a1.png)
+
 
 #### Important Links
 [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki) // 
@@ -26,9 +31,6 @@ Other Pages:
 
 #### Information
 The club Project Protect Our Ocean has tasked us with creating a website to help their cause. We will create a website that acts as a home site for them, and help them spread information to more audiences. Our project ideas and plans include deployment of our website, utilizing all requests from our sponsor (leaders of the club Project Protect Our Ocean), and adding in technicals that can be easily implemented and read by users. Specifics include pages that allow users to learn more about oceans, oceanagraphy, the current state of our oceans, and what they can do to contribute, donate, or join the club.
-
-#### Sponsor - Ethan Joo (club president)
-What the sponsor wants from us is detailed in the feature progress and review page. Currently, we are still deciding on a license because they have not yet chosen one for sure. We have pointed them towards the GNU GPLv3, as it seems the best for the website. However, they have not given the okay yet so we are waiting before selecting this license.
 
 ### Credits
 - [Team Scrum Board](https://github.com/jeankim05/tri3teambigmac/projects/1)
