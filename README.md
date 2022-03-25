@@ -21,6 +21,9 @@ Other Pages:
   * ![Wireframe - Get involved_ Calendar](https://user-images.githubusercontent.com/89223703/158898667-7434bfcf-8d9a-4c56-a2f7-2f626b0b66d7.png)
 * Wireframe About club leadership page
   * ![Club leadership wireframe](https://user-images.githubusercontent.com/89223703/160060356-48b9133b-3065-46ce-aa69-fde5fbfa4449.png)
+* Project Key Workflow
+*  ![image](https://user-images.githubusercontent.com/60992581/160067978-78ed03b1-e9b2-4136-978a-4fbb1130e2a1.png)
+
 
 #### Important Links
 [Wiki](https://github.com/jeankim05/tri3teambigmac/wiki) // 
