@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block content %}
+<p action="{{ logout }}">Logged Out... Redirecting to Login Page</p>
+{% endblock %}
+
+{% block meta %}
+    <meta http-equiv="refresh" content="2;url={{url_for('crud.crud_login')}}">
+{% endblock %}
