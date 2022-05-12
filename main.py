@@ -23,6 +23,9 @@ def signin():
 def signup():
     return render_template("sign-up.html")
 
+@app.errorhandler(404)
+def error(e):
+    return render_template("404.html"), 404
 
 # runs the application on the development server
 if __name__ == "__main__":

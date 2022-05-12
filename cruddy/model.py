@@ -19,13 +19,15 @@ class Users(UserMixin, db.Model):
     email = db.Column(db.String(255), unique=True, nullable=False)
     password = db.Column(db.String(255), unique=False, nullable=False)
     phone = db.Column(db.String(255), unique=False, nullable=False)
+    privilege = db.Column(db.Integer, unique=False, nullable=False)
 
     # constructor of a User object, initializes of instance variables within object
-    def __init__(self, name, email, password, phone):
+    def __init__(self, name, email, password, phone, privilege):
         self.name = name
         self.email = email
         self.set_password(password)
         self.phone = phone
+        self.privilege = privilege
 
     # CRUD create/add a new record to the table
     # returns self or None on error
@@ -48,8 +50,8 @@ class Users(UserMixin, db.Model):
             "email": self.email,
             "password": self.password,
             "phone": self.phone,
-            "query": "by_alc"  # This is for fun, a little watermark
-        }
+            "privilege": self.privilege
+            }
 
     # CRUD update: updates users name, password, phone
     # returns self
