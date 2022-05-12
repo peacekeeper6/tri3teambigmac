@@ -1,3 +1,4 @@
+'''
 """control dependencies to support CRUD routes and APIs"""
 from flask import Blueprint, render_template
 from flask_restful import Api, Resource
@@ -164,3 +165,4 @@ def api_printer():
 if __name__ == "__main__":
     api_tester()
     api_printer()
+'''
