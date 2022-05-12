@@ -2,7 +2,7 @@
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a href="" >
+    <a href="{{url_for('index')}}" >
         <img src="/static/assets/lightyear.jpeg" width="26" height="25" class="center" alt="">
     </a>
     <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/">{{basename}}</a>
@@ -12,22 +12,18 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <a class="nav-link" href={{ url_for('index') }}>Welcome</a>
-            <a class="nav-link" href="/login">Sign-In</a>
+            <a class="nav-link" href={{url_for('index')}}>Welcome</a>
             <!-- stub is shown using the name of the route -->
         </div>
     </div>
-<!--    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">-->
-<!--        <ul class="navbar-nav">-->
-<!--            <li class="nav-item dropdown">-->
-<!--                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                    Data-->
-<!--                </a>-->
-<!--                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">-->
-<!--                    <li><a class="dropdown-item" href={{ url_for('crud.crud') }}>SQL CRUD</a></li>-->
-<!--                    <li><a class="dropdown-item" href={{ url_for('crud.search') }}>SQL Search</a></li>-->
-<!--                </ul>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
+    <div class="navbar-right">
+        <div class="navbar-nav">
+            {% if current_user['name']|length != 0 %}
+            <a class="navbar-text"> Logged in as <b>{{ current_user['name'] }}</b></a>
+            <a class="nav-link" href={{url_for('crud.logout')}}><b>Log Out</b></a>
+            {% else %}
+            <a class="nav-link" href={{url_for('crud.crud_login')}}><b>Sign In</b></a>
+            {% endif %}
+        </div>
+    </div>
 </nav>
