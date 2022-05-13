@@ -31,3 +31,20 @@ Everyone | Review Ticket Week 1 | [Week 1 Review Ticket](https://github.com/jean
 * Club logo for the home page
 * Sign in for clubs
 * Allowing the officers of the club to have a special access to the website
+
+### Weeks 2-6
+- AP EXAM Preparation and Data Structures Project
+
+### Week 7
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project | |
+Jun Lim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | | 
+Connor Wang | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | | 
+Aidan Wu | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  |  | 
+Everyone | Review Ticket Week 7 | [Week 7 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/38)
+
+### Week 7 Project Owner Meeting Notes
+* To integrate topics from the tech talk into our PBL project, the notes section can be used to track attendance, leadership, volunteering, etc
+* Some pages of the website will be open to any user from anywhere, but some of them will be restricted so that a login is required to view that page
+* Communication by the administration to the members in an effecient way
