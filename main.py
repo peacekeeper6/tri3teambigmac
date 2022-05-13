@@ -19,6 +19,9 @@ def signin():
 def signup():
     return render_template("sign-up.html")
 
+@app.route('/calendar')
+def calendar():
+    return render_template("calendar.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
