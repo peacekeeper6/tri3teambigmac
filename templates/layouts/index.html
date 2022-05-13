@@ -31,19 +31,35 @@
             line-height: 25px;
         }
         button{
-                    width: 200px;
-                    padding: 15px 0;
-                    text-align: center;
-                    margin: 20px 10px;
-                    border-radius: 25px;
-                    font-weight: bold;
-                    border: 2px solid black;
-                    background: transparent;
-                    color: antiquewhite;
-                    cursor: pointer;
-                    position: relative;
-                    overflow: hidden;
-                }
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid black;
+            background: transparent;
+            color: antiquewhite;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button2{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid black;
+            background: lightblue;
+            color: antiquewhite;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
         span{
             background: tan;
             height: 100%;
@@ -70,7 +86,6 @@
             text-align: center;
             font-family: Baskerville;
         }
-        body {font-family: Baskerville;}
 
         form {
             border: 3px solid #f1f1f1;
@@ -135,14 +150,29 @@
 
         <div class="newsletter" style="background-color:white">
             <input type="text" placeholder="Email address" name="mail" required>
-        </div>
-
-        <div class="newsletter">
             <input type="submit" value="Subscribe">
         </div>
+
+        <ul2></ul2>
     </form>
     <script>
+        let emails = ['aidan@wu.com', 'jean@kim.com'];
 
+        function addEmail(){
+            let template = emails.map(emails => `<li>${emails}</li>`).join('\n');
+            document.querySelector('ul2').innerHTML = template;
+        }
+
+        addEmail();
+
+        let btnAdd = document.querySelector('button');
+        let input = document.querySelector('input');
+
+        btnAdd.addEventListener('click', () =>{
+            emails.push(input.value);
+            input.value = '';
+            addEmail();
+        })
     </script>
     </body>
 {% endblock %}
