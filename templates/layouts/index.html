@@ -1,8 +1,9 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/base.html" %}
 {% block head %}
+    <head>
+        <link rel="stylesheet" href="/templates/css/index.css">
     <title> Project POO</title>
-    <link rel="stylesheet" href="/templates/css/index.css">
     <style>
         .banner{
             width: 100%;
@@ -30,19 +31,19 @@
             line-height: 25px;
         }
         button{
-            width: 200px;
-            padding: 15px 0;
-            text-align: center;
-            margin: 20px 10px;
-            border-radius: 25px;
-            font-weight: bold;
-            border: 2px solid black;
-            background: transparent;
-            color: antiquewhite;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
+                    width: 200px;
+                    padding: 15px 0;
+                    text-align: center;
+                    margin: 20px 10px;
+                    border-radius: 25px;
+                    font-weight: bold;
+                    border: 2px solid black;
+                    background: transparent;
+                    color: antiquewhite;
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                }
         span{
             background: tan;
             height: 100%;
@@ -69,7 +70,46 @@
             text-align: center;
             font-family: Baskerville;
         }
+        body {font-family: Baskerville;}
+
+        form {
+            border: 3px solid #f1f1f1;
+            font-family: Arial;
+        }
+
+        .newsletter {
+            padding: 20px;
+            background-color: lightblue;
+            text-align: center;
+            font-family: Baskerville;
+        }
+
+        input[type=text], input[type=submit] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type=checkbox] {
+            margin-top: 16px;
+        }
+
+        input[type=submit] {
+            background-color: antiquewhite;
+            color: black;
+            border: none;
+        }
+
+        input[type=submit]:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            opacity: .9;
+        }
+
     </style>
+    </head>
 {% endblock %}
 {% block body %}
     <body>
@@ -87,5 +127,23 @@
     <div class="info">
         <h1>Get to know our club</h1>
     </div>
+    <form action="/action_page.php">
+        <div class="newsletter">
+            <h2>Want to get notified by us?</h2>
+            <p>Input your email to get notified by Project Protect Our Ocean. We will send updates about events coming up, things to spread and share to others, and ways to get involved.  </p>
+        </div>
+
+        <div class="newsletter" style="background-color:white">
+            <input type="text" placeholder="Email address" name="mail" required>
+        </div>
+
+        <div class="newsletter">
+            <input type="submit" value="Subscribe">
+        </div>
+    </form>
+    <script>
+
+    </script>
     </body>
 {% endblock %}
+

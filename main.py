@@ -1,8 +1,12 @@
-# import "packages" from flask
-from flask import Flask, render_template
+from flask import render_template
+from __init__ import app
 
-# create a Flask instance
-app = Flask(__name__)
+from cruddy.app_crud import app_crud
+# from cruddy.app_crud_api import app_crud_api
+
+
+app.register_blueprint(app_crud)
+# app.register_blueprint(app_crud_api)
 
 
 # connects default URL to render index.html
@@ -22,6 +26,10 @@ def signup():
 @app.route('/calendar')
 def calendar():
     return render_template("calendar.html")
+
+@app.errorhandler(404)
+def error(e):
+    return render_template("404.html"), 404
 
 # runs the application on the development server
 if __name__ == "__main__":

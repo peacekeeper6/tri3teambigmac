@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "layouts/base.html" %}
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-In</title>
+</head>
+<body style="background-color:#ffffff;">
+
+<br> <h1 style="color: black">Welcome! Sign-up to get started!</h1> <br>
+
+<center>
+    <form style="color: black" method="POST" ID="authUser" action={{url_for('crud.crud_authorize')}} >
+<!--        <label for="email">Email Address</label> <br>-->
+<!--        <input type="email" id="email" name="email" required> <br> <br>-->
+<!--        <label for="pass">Password (8 characters minimum):</label> <br>-->
+<!--        <input type="password" id="pass" name="password"minlength="8" required> <br> <br>-->
+<!--        <label for="pass">Repeat Password:</label> <br>-->
+<!--        <input type="password" id="pass" name="password"minlength="8" required> <br> <br> <br>-->
+<!--        <input type="submit" value="Sign-Up"> <br> <br>-->
+        <label for="user_name">Username</label><br>
+        <input type="text" id='user_name' name="user_name" size="20" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" size="20" required><br><br>
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" size="20" required><br><br>
+        <label for="password1">Password</label><br>
+        <input type="password" id='password1' name="password1" size="20" required><br><br>
+        <label for="password2">Password Confirmation</label><br>
+        <input type="password" id='password2' name="password2" size="20" required><br><br>
+        <input type="submit" value="Submit"><br>
+        <a href={{url_for('crud.crud_login')}}>Log In</a><br><br>
+    </form>
+</center>
+
+
+</body>
+<style>
+    h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    form {
+        width: 70%;
+        height: 85%;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0px 25px 40px #1687d933;
+    }
+
+</style>
+</html>
+{% endblock %}
+{% block background %}
+{% endblock %}

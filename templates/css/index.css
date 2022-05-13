@@ -5,3 +5,17 @@
     background-size: cover;
     background-position: center;
 }
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid black;
+    background: transparent;
+    color: antiquewhite;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
