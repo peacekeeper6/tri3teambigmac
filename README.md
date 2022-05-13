@@ -7,6 +7,7 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Credits](#credits)
 - [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-0)
 - [Week 1](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-1)
+- [Weeks 2-6](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#weeks-2-6)
 
 ### Runtime Link
 To be determined!
