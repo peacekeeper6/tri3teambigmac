@@ -45,7 +45,7 @@ def crud():
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('crud.crud_login'))
+    return redirect(url_for('index'))
 
 
 @app_crud.route('/logou')
