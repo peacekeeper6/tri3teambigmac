@@ -24,6 +24,8 @@
         <div class="container bg-secondary py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
                 <h2>Table Viewer</h2>
+                <h5>{{ user }}</h5>
+                <h5>{{ user['privilege'] }}</h5>
                 <h5>Logged in as {{ user['name'] }}</h5>
                 <form action={{url_for('crud.logout')}}>
                     <input type="submit" value="Logout">
@@ -54,6 +56,7 @@
                                 <th>Email</th>
                                 <th>Password</th>
                                 <th>Phone</th>
+                                <th>Privilege</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -71,6 +74,7 @@
                                     <td>{{ row['email'] }}</td>
                                     <td>{{ row['password'] | truncate(20) }}</td>
                                     <td>{{ pnf }}</td>
+                                    <td>{{ row['privilege'] }}</td>
                                 </tr>
                             {% endfor %}
                             </tbody>

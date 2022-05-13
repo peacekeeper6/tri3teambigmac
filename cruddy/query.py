@@ -94,7 +94,7 @@ def user_loader(user_id):
 
 
 # Authorise new user requires user_name, email, password
-def authorize(name, email, password, phone):
+def authorize(name, email, password, phone, privilege):
     if is_user(email, password):
         return False
     else:
@@ -102,7 +102,8 @@ def authorize(name, email, password, phone):
             name=name,
             email=email,
             password=password,
-            phone=phone  # this should be added to authorize.html
+            phone=phone,  # this should be added to authorize.html
+            privilege=privilege
         )
         # encrypt their password and add it to the auth_user object
         auth_user.create()
@@ -147,3 +148,4 @@ if __name__ == "__main__":
     # Clean up data from run, so it can run over and over the same
     user_record = user_by_email(email1)
     user_record.delete()
+    print(current_user)
