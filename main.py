@@ -23,6 +23,10 @@ def signin():
 def signup():
     return render_template("sign-up.html")
 
+@app.route('/calendar')
+def calendar():
+    return render_template("calendar.html")
+
 @app.errorhandler(404)
 def error(e):
     return render_template("404.html"), 404
