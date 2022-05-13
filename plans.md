@@ -17,6 +17,7 @@ Other Pages:
 2. Sign in page with ability to add notes from administrative users (check wireframe above)
 3. Sign up page for those new users who have not yet had the chance to get added to the database, will ask questions including name, email, phone number
 4. Events Calendar that displays a calendar of events for the club (examples include club meetings, beach cleanup, team bonding, club elections, etc)
-5. Club Information (Purpose of the club, leaders of the club, members of the club, how to join the club)
-6. Information Pages will include information on the current state of oceans and the environment (one of the secondary pages that will be open to all users)
-7. Possible fun and games tab that will have fun activities for the users to try such as a quiz!
+5. Communications page that allows members to see recent announcements, get messages from fellow members and officers, and allows those with officer roles to send out important messages
+6. Club Information (Purpose of the club, leaders of the club, members of the club, how to join the club)
+7. Information Pages will include information on the current state of oceans and the environment (one of the secondary pages that will be open to all users)
+8. Possible fun and games tab that will have fun activities for the users to try such as a quiz!
