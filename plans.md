@@ -11,3 +11,12 @@ Other Pages:
   * ![Wireframe - Get involved_ Calendar](https://user-images.githubusercontent.com/89223703/158898667-7434bfcf-8d9a-4c56-a2f7-2f626b0b66d7.png)
 * Project Key Workflow
   * ![image](https://user-images.githubusercontent.com/60992581/160067978-78ed03b1-e9b2-4136-978a-4fbb1130e2a1.png)
+
+### Description of new PBL features to implement
+1. Updated Home Page with links to all the other pages in the navbar (may incorporate a side navbar to clear up space on top)
+2. Sign in page with ability to add notes from administrative users (check wireframe above)
+3. Sign up page for those new users who have not yet had the chance to get added to the database, will ask questions including name, email, phone number
+4. Events Calendar that displays a calendar of events for the club (examples include club meetings, beach cleanup, team bonding, club elections, etc)
+5. Club Information (Purpose of the club, leaders of the club, members of the club, how to join the club)
+6. Information Pages will include information on the current state of oceans and the environment (one of the secondary pages that will be open to all users)
+7. Possible fun and games tab that will have fun activities for the users to try such as a quiz!
