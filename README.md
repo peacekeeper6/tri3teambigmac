@@ -8,6 +8,7 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-0)
 - [Week 1](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-1)
 - [Weeks 2-6](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#weeks-2-6)
+- [Week 7](https://github.com/jeankim05/tri3teambigmac/edit/main/README.md#week-7)
 
 ### Runtime Link
 To be determined!
@@ -78,5 +79,5 @@ Jean Kim | Individual Github Pages, Transition to PBL and Presentation of Sponso
 Jun Lim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | | 
 Connor Wang | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | | 
 Aidan Wu | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  |  | 
-Everyone | Review Ticket Week 7 | [Week 7 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/38
+Everyone | Review Ticket Week 7 | [Week 7 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/38)
 
