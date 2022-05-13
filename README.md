@@ -60,8 +60,8 @@ Everyone | Review Ticket Week 0 | [Week 0 Review ticket](https://github.com/jean
 Name | Requirements | Evidence | Grade |
 ---- | ------------ | -------- | ----- |
 Jean Kim | Individual Github Pages, PBL Feature: Club Information and Ocean Information Pages | [Link to Scrum board Ticket](https://github.com/jeankim05/tri3teambigmac/issues/21) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/13) | 4.5/5
-Jun Lim | Individual Github Pages, PBL Feature: Register as a club member database | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/10) ? 4.5/5
-Connor Wang | Individual Github Pages, PBL Feature: Home Page, Incorporate Administration, Events Calendar | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/20) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/11) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/14) ? 4.5/5
+Jun Lim | Individual Github Pages, PBL Feature: Register as a club member database | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/10) | 4.5/5
+Connor Wang | Individual Github Pages, PBL Feature: Home Page, Incorporate Administration, Events Calendar | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/20) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/11) // [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/14) | 4.5/5
 Aidan Wu | Individual Github Pages, PBL Feature: Communication with Members | [Link to scrum board ticket](https://github.com/jeankim05/tri3teambigmac/issues/12) | 4.5/5
 Everyone | Review Ticket Week 1 | [Week 1 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/22)
 * Project owner initial requirement is to make a way for people to join the club through the website. He wants the ability for people to input their information and for him to be able to read and receive the info. Making this will be the current top priority, which will include a sign in and sign up.
