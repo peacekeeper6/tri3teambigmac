@@ -70,3 +70,13 @@ Everyone | Review Ticket Week 1 | [Week 1 Review Ticket](https://github.com/jean
 
 ### Weeks 2-6
 - AP EXAM Preparation and Data Structures Project
+
+### Week 7
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project | |
+Jun Lim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | | 
+Connor Wang | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | | 
+Aidan Wu | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  |  | 
+Everyone | Review Ticket Week 7 | [Week 7 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/38
+
