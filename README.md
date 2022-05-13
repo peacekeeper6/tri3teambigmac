@@ -66,3 +66,6 @@ Aidan Wu | Individual Github Pages, PBL Feature: Communication with Members | [L
 Everyone | Review Ticket Week 1 | [Week 1 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/22)
 * Project owner initial requirement is to make a way for people to join the club through the website. He wants the ability for people to input their information and for him to be able to read and receive the info. Making this will be the current top priority, which will include a sign in and sign up.
 * Requirements and Jobs assigned to each individuals listed on Scrum Board, including at least one in progress task
+
+### Weeks 2-6
+- AP EXAM Preparation and Data Structures Project
