@@ -1,8 +1,8 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/base.html" %}
 {% block head %}
-    <head>
-        <link rel="stylesheet" href="/templates/css/index.css">
+<head>
+    <link rel="stylesheet" href="/templates/css/index.css">
     <title> Project POO</title>
     <style>
         .banner{
@@ -31,19 +31,35 @@
             line-height: 25px;
         }
         button{
-                    width: 200px;
-                    padding: 15px 0;
-                    text-align: center;
-                    margin: 20px 10px;
-                    border-radius: 25px;
-                    font-weight: bold;
-                    border: 2px solid black;
-                    background: transparent;
-                    color: antiquewhite;
-                    cursor: pointer;
-                    position: relative;
-                    overflow: hidden;
-                }
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid black;
+            background: transparent;
+            color: antiquewhite;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button2{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid black;
+            background: lightblue;
+            color: antiquewhite;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
         span{
             background: tan;
             height: 100%;
@@ -70,7 +86,6 @@
             text-align: center;
             font-family: Baskerville;
         }
-        body {font-family: Baskerville;}
 
         form {
             border: 3px solid #f1f1f1;
@@ -107,12 +122,11 @@
             box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
             opacity: .9;
         }
-
     </style>
-    </head>
+</head>
 {% endblock %}
 {% block body %}
-    <body>
+<body>
     <div class="banner">
         <img src="/static/assets/oceanbackground.jpeg" width="100%" height="100%">
     </div>
@@ -120,7 +134,7 @@
         <h1>Project Protect Our Ocean</h1>
         <p> Welcome to Del Norte's Project Protect Our Ocean Club Website </p>
         <div>
-            <button type="button" onclick="document.location='signin'"><span></span>Sign-In</button>
+            <button type="button" onclick="document.location={{url_for('crud.crud_authorize')}}"><span></span>Join the Club!</button>
             <button type="button"><span></span>Get Involved!</button>
         </div>
     </div>
@@ -132,18 +146,32 @@
             <h2>Want to get notified by us?</h2>
             <p>Input your email to get notified by Project Protect Our Ocean. We will send updates about events coming up, things to spread and share to others, and ways to get involved.  </p>
         </div>
-
         <div class="newsletter" style="background-color:white">
             <input type="text" placeholder="Email address" name="mail" required>
-        </div>
-
-        <div class="newsletter">
             <input type="submit" value="Subscribe">
         </div>
     </form>
+    {% if current_user.privilege == 0 %}
+    <ul2></ul2>
     <script>
+        let emails = ['aidan@wu.com', 'jean@kim.com'];
 
+        function addEmail(){
+            let template = emails.map(emails => `<li>${emails}</li>`).join('\n');
+            document.querySelector('ul2').innerHTML = template;
+        }
+
+        addEmail();
+
+        let btnAdd = document.querySelector('button');
+        let input = document.querySelector('input');
+
+        btnAdd.addEventListener('click', () =>{
+            emails.push(input.value);
+            input.value = '';
+            addEmail();
+        })
     </script>
-    </body>
+    {% endif %}
+</body>
 {% endblock %}
-
