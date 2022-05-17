@@ -136,44 +136,12 @@
         <p> Welcome to Del Norte's Project Protect Our Ocean Club Website </p>
         <div>
             <button type="button" onclick="document.location='signup'"><span></span>Join the Club!</button>
-            <button type="button"><span></span>Get Involved!</button>
+            <button type="button" onclick="document.location='GetInvolved'"><span></span>Get Involved!</button>
         </div>
     </div>
     <div class="info">
         <h1>Get to know our club</h1>
     </div>
-    <form action="/action_page.php">
-        <div class="newsletter">
-            <h2>Want to get notified by us?</h2>
-            <p>Input your email to get notified by Project Protect Our Ocean. We will send updates about events coming up, things to spread and share to others, and ways to get involved.  </p>
-        </div>
-
-        <div class="newsletter" style="background-color:white">
-            <input type="text" placeholder="Email address" name="mail" required>
-            <input type="submit" value="Subscribe">
-        </div>
-
-        <ul2></ul2>
-    </form>
-    <script>
-        let emails = ['aidan@wu.com', 'jean@kim.com'];
-
-        function addEmail(){
-            let template = emails.map(emails => `<li>${emails}</li>`).join('\n');
-            document.querySelector('ul2').innerHTML = template;
-        }
-
-        addEmail();
-
-        let btnAdd = document.querySelector('button');
-        let input = document.querySelector('input');
-
-        btnAdd.addEventListener('click', () =>{
-            emails.push(input.value);
-            input.value = '';
-            addEmail();
-        })
-    </script>
     </body>
 {% endblock %}
 
