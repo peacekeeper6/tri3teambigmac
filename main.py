@@ -35,6 +35,10 @@ def GetInvolved():
 def error(e):
     return render_template("404.html"), 404
 
+@app.route('/announcement')
+def announcement():
+    return render_template("announcement.html")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
