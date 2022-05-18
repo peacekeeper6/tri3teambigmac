@@ -1,0 +1,54 @@
+{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <title>Get Involved with POO!</title>
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 40%;
+            height: 20%;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .container:hover .image {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+    </style>
+</head>
+{% endblock %}
+{% block body %}
+<body>
+<div>
+    <div class="container">
+        <p>Join Discord!</p>
+        <img class="image" onclick="window.open('https://discord.gg/6rkJSmfarT','_blank')" src="static/assets/oceandiscord.png" alt="Disc">
+    </div>
+    <div class="container">
+        <p>Follow us on Instagram!</p>
+        <img class="image" onclick="window.open('https://www.instagram.com/dnppoo/','_blank')" src="static/assets/insta.png" alt="IG">
+    </div>
+</div>
+</div>
+</body>
+</html>
+{% endblock %}
