@@ -75,9 +75,9 @@ Everyone | Review Ticket Week 1 | [Week 1 Review Ticket](https://github.com/jean
 ### Week 7
 Name | Requirements | Evidence | Grade |
 ---- | ------------ | -------- | ----- |
-Jean Kim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project | |
-Jun Lim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | | 
-Connor Wang | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | | 
-Aidan Wu | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  |  | 
+Jean Kim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project | [Link to scrum board with review tickets](https://github.com/jeankim05/tri3teambigmac/projects/1) | 3/3
+Jun Lim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  |[Link to scrum board with review tickets](https://github.com/jeankim05/tri3teambigmac/projects/1) | 3/3
+Connor Wang | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  |[Link to scrum board with review tickets](https://github.com/jeankim05/tri3teambigmac/projects/1) | 3/3 
+Aidan Wu | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | [Link to scrum board with review tickets](https://github.com/jeankim05/tri3teambigmac/projects/1) | 3/3
 Everyone | Review Ticket Week 7 | [Week 7 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/38)
 
