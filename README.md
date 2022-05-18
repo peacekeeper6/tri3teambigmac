@@ -1,4 +1,4 @@
-# Team Project: Period 5 Team Big Mac
+[[# Team Project: Period 5 Team Big Mac
 Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 
 ## Table of Contents
@@ -80,4 +80,4 @@ Jun Lim | Individual Github Pages, Transition to PBL and Presentation of Sponsor
 Connor Wang | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  |[Link to scrum board with review tickets](https://github.com/jeankim05/tri3teambigmac/projects/1) | 3/3 
 Aidan Wu | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | [Link to scrum board with review tickets](https://github.com/jeankim05/tri3teambigmac/projects/1) | 3/3
 Everyone | Review Ticket Week 7 | [Week 7 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/38)
-
+](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-9)](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-9)
