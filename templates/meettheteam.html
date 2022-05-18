@@ -1,0 +1,141 @@
+{% include "layouts/base.html" %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: rono, serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="about-section">
+    <h1>Meet the Del Norte Project Protect Our Ocean Team! </h1>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="" alt="president" style="width:100%">
+            <div class="container">
+                <h2>Ethan Joo</h2>
+                <p class="title">President</p>
+                <p>Ethan Joo is the President and founding member of Del Norte Project Protect Our Ocean. He came up with the idea of the club as he was motivated to clean up beaches and preserve nature. In his free time, he likes to play soccer.</p>
+                <p>ethanjoo@example.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="" alt="vice president" style="width:100%">
+            <div class="container">
+                <h2>Connor Wang</h2>
+                <p class="title">Vice President</p>
+                <p>Connor Wang is the President and founding member of Del Norte Project Protect Our Ocean. He has worked with Ethan to set up and lead the club. In his free time, Connor likes to play football.</p>
+                <p>connorwang2@gmail.com</p>
+                <p><button class="button"
+                onclick="window.location.href = 'mailto:connorwang2@gmail.com'">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="" alt="secretary" style="width:100%">
+            <div class="container">
+                <h2>Maria Antunes</h2>
+                <p class="title">Secretary</p>
+                <p>Maria Antunes is the secretary and founding member of Del Norte Project Protect Our Ocean.</p>
+                <p>maria@example.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="" alt="treasurer" style="width:100%">
+            <div class="container">
+                <h2>River Giffin</h2>
+                <p class="title">Treasurer</p>
+                <p>River Giffin is the treasurer and founding member of Del Norte Project Protect Our Ocean. He works with the club officers to lead the club and manage club finances. In his free time, River likes to play tennis.</p>
+                <p>river@example.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
