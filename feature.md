@@ -48,3 +48,17 @@ Everyone | Review Ticket Week 7 | [Week 7 Review Ticket](https://github.com/jean
 * To integrate topics from the tech talk into our PBL project, the notes section can be used to track attendance, leadership, volunteering, etc
 * Some pages of the website will be open to any user from anywhere, but some of them will be restricted so that a login is required to view that page
 * Communication by the administration to the members in an effecient way
+
+### Week 9
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Club Information, Ocean Information, Announcements | [Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/56) | Crossover and Teacher Grade
+Jun Lim | Deployment with AWS + Calendar Updates  |[Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/54) | Crossover and Teacher Grade
+Connor Wang | Get Involved Page, Updating Home Page  |[Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/55) | Crossover and Teacher Grade
+Aidan Wu | SQL Database, Notes Incorporation, Timeline  | [Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/53) | Crossover and Teacher Grade
+Everyone | Review Ticket Week 9 | [Week 9 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/52) | Team Grading
+
+### Week 9 Project Owner Meeting Notes
+* Because the club is operating now with lots of members, new club officers have been appointed
+* They have been added to the about us page as well as the announcements page
+* New updates include club meetings and discord servers that we will use for mass communication
