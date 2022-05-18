@@ -27,9 +27,29 @@ def signup():
 def calendar():
     return render_template("calendar.html")
 
+@app.route('/GetInvolved')
+def GetInvolved():
+    return render_template("Gallery/GetInvolved.html")
+
 @app.errorhandler(404)
 def error(e):
     return render_template("404.html"), 404
+
+@app.route('/announcement')
+def announcement():
+    return render_template("announcement.html")
+
+@app.route('/oceaninformation')
+def oceaninformation():
+    return render_template("oceaninformation.html")
+
+@app.route('/oceanquiz')
+def oceanquiz():
+    return render_template("oceanquiz.html")
+
+@app.route('/meettheteam')
+def meettheteam():
+    return render_template("meettheteam.html")
 
 # runs the application on the development server
 if __name__ == "__main__":

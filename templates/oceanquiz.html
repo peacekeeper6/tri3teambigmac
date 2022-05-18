@@ -1,0 +1,230 @@
+
+{% include "layouts/base.html" %}
+
+{% block body %}
+    <h1 class="center-block" style=" text-align:center; font-family: serif"> Ocean Quiz</h1>
+    <h3 style="text-align: center;padding-left:25px; font-size: 25px">Welcome to our quiz! Click the corresponding letter to your answer to all the questions and then submit. This mini quiz will test you on common ocean facts. </h3>
+    <h4 style="text-align: center; font-size: 20px">Correct Answers Show up in Green while incorrect answers show up in red. Scroll all the way down for results. Good luck!</h4>
+    <div id="quiz"></div>
+    <button id="submit">Submit Answers</button>
+    <div id="results"></div>
+
+    <style>
+        body{
+            font-size: 15px;
+            font-family: rono, serif;
+            color: #333;
+            background-color: lightskyblue;
+        }
+        .question{
+            font-weight: 600;
+            margin-left: 50px;
+        }
+        .answers {
+            margin-bottom: 20px;
+            margin-left: 100px;
+        }
+        .answers label{
+            display: block;
+        }
+        #submit{
+            font-family: sans-serif;
+            font-size: 20px;
+            background-color: blue;
+            color: black;
+            border: 0px;
+            border-radius: 3px;
+            padding: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-left: 100px;
+        }
+        #submit:hover{
+            background-color: lightpink;
+        }
+
+    </style>
+
+    <script>
+        (function(){
+            function buildQuiz(){
+                const output = [];
+
+                myQuestions.forEach(
+                    (currentQuestion, questionNumber) => {
+
+                        const answers = [];
+
+                        for(letter in currentQuestion.answers){
+
+                            answers.push(
+                                `<label>
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+            </label>`
+                            );
+                        }
+
+                        output.push(
+                            `<div class="question"> ${currentQuestion.question} </div>
+          <div class="answers"> ${answers.join('')} </div>`
+                        );
+                    }
+                );
+
+                quizContainer.innerHTML = output.join('');
+            }
+
+            function showResults(){
+
+                const answerContainers = quizContainer.querySelectorAll('.answers');
+
+                let numCorrect = 0;
+
+                myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+
+                    const answerContainer = answerContainers[questionNumber];
+                    const selector = `input[name=question${questionNumber}]:checked`;
+                    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+                    if(userAnswer === currentQuestion.correctAnswer){
+
+                        numCorrect++;
+
+
+                        answerContainers[questionNumber].style.color = 'darkgreen';
+                    }
+
+                    else{
+
+                        answerContainers[questionNumber].style.color = 'red';
+                    }
+                });
+
+
+                resultsContainer.innerHTML = `Result: ${numCorrect} out of ${myQuestions.length} correct`;
+            }
+
+            const quizContainer = document.getElementById('quiz');
+            {#quizContainer has all the questions that are included in the actual quiz, const refers to a read-only cross reference to a certain value#}
+            const resultsContainer = document.getElementById('results');
+            {#resultsContainer helps get the results to the quiz  #}
+            const submitButton = document.getElementById('submit');
+            {# submit means that the user will be able to submit their results and get a score #}
+            const myQuestions = [
+                {
+                    question: "1. Over what percent of our planet's oxygen levels are produced by the oceans?",
+                    answers: {
+                        a: "Over 50%",
+                        b: "Over 60%",
+                        c: "Over 70%",
+                        d: "Over 80%"
+                    },
+                    correctAnswer: "c"
+                },
+                {
+                    question: "2. What percent of the United States is underneath the oceans?",
+                    answers: {
+                        a: "40%",
+                        b: "50%",
+                        c: "60%",
+                        d: "70%"
+                    },
+                    correctAnswer: "b"
+                },
+                {
+                    question: "3. About how many islands does the Pacific Ocean contain?",
+                    answers: {
+                        a: "25,000",
+                        b: "30,000",
+                        c: "40,000",
+                        d: "7"
+                    },
+                    correctAnswer: "a"
+                },
+                {
+                    question: "4. How many people have set foot on the Mariana Trench (lowest point in the ocean)? ",
+                    answers: {
+                        a: "1",
+                        b: "2",
+                        c: "3",
+                        d: "4"
+                    },
+                    correctAnswer: "c"
+                },
+                {
+                    question: "5. About how many shipwrecks are in the oceans?",
+                    answers: {
+                        a: "3,000,000",
+                        b: "4,000,000",
+                        c: "5,000,000",
+                        d: "6,000,000"
+                    },
+                    correctAnswer: "a"
+                },
+                {
+                    question: "6. How deep is the Mariana Trench?",
+                    answers: {
+                        a: "6 miles",
+                        b: "6.5 miles",
+                        c: "7 miles",
+                        d: "7.5 miles"
+                    },
+                    correctAnswer: "c"
+                },
+                {
+                    question: "7. How long was the largest blue whale ever recorded? ",
+                    answers: {
+                        a: "108 feet",
+                        b: "118 feet",
+                        c: "128 feet",
+                        d: "138 feet"
+                    },
+                    correctAnswer: "a"
+                },
+                {
+                    question: "8. What is the largest ocean on Earth?",
+                    answers: {
+                        a: "Atlantic",
+                        b: "Indian",
+                        c: "Asian",
+                        d: "Pacific"
+                    },
+                    correctAnswer: "d"
+                },
+                {
+                    question: "9. What is the average depth of the ocean?",
+                    answers: {
+                        a: "11,100 feet",
+                        b: "12,100 feet",
+                        c: "13,100 feet",
+                        d: "14,100 feet",
+                    },
+                    correctAnswer: "b"
+                },
+                {
+                    question: "10. Where was the world record for deepest freedive set?",
+                    answers: {
+                        a: "Russia",
+                        b: "Greece",
+                        c: "Indonesia",
+                        d: "Peru",
+                    },
+                    correctAnswer: "b"
+                }
+            ];
+
+            buildQuiz();
+
+            submitButton.addEventListener('click', showResults);
+        })();
+    </script>
+    <style>
+        #results {
+            text-align: center; font-size: 35px
+        }
+    </style>
+
+{% endblock %}
