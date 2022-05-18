@@ -1,22 +1,837 @@
-{% include "layouts/base.html" %}
-
-<div id="cal-wrap">
-    <!-- (A) PERIOD SELECTOR -->
-    <div id="cal-date">
-        <select id="cal-mth"></select>
-        <select id="cal-yr"></select>
-    </div>
-
-    <!-- (B) CALENDAR -->
-    <div id="cal-container"></div>
-
-    <!-- (C) EVENT FORM -->
-    <form id="cal-event">
-        <h1 id="evt-head"></h1>
-        <div id="evt-date"></div>
-        <textarea id="evt-details" required></textarea>
-        <input id="evt-close" type="button" value="Close"/>
-        <input id="evt-del" type="button" value="Delete"/>
-        <input id="evt-save" type="submit" value="Save"/>
-    </form>
+<div class="calendar-rectangle">
+    <div id="calendar-content" class="calendar-content"></div>
 </div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Dosis');
+
+    $global-color: #616161;
+    $header-color: #ffffff;
+    $background-color-body: #ffffff;
+    $background-color-light-4: #bbdefb;
+    $background-color-light-3: #90caf9;
+    $background-color-main: #2196f3;
+    $background-color-dark: #1e88e5;
+    $animation-delay: 0.5s;
+
+    body {
+        font-size: 16px;
+    }
+
+    .calendar-rectangle {
+        width: 100%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        color: $global-color;
+        font-size: 1em;
+        font-family: 'Dosis', sans-serif;
+        overflow: hidden;
+        box-shadow: 0px 0px 50px #888888;
+
+    @media (min-width: 576px) {
+        width:70%;
+    }
+
+    @media (min-width: 768px) {
+        width:50%;
+        font-size: 1em;
+    }
+
+    @media (min-width: 992px) {
+        width:40%;
+        font-size: 1em;
+    }
+
+    @media (min-width: 1200px) {
+        width:30%;
+        font-size: 1em;
+    }
+
+    @media (min-width: 1300px) {
+        width: 20%;
+    }
+
+    &:before {
+         content: "";
+         display: block;
+         padding-top: 120%;
+     }
+    }
+
+    .calendar-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .main-calendar {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    .calendar-header {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 30%;
+        color: $header-color;
+
+    .title-header {
+        width: 100%;
+        height: 70%;
+        white-space: nowrap;
+        font-size: 1.2em;
+        background-color: $background-color-dark;
+
+    @media (min-width: 992px) {
+        font-size: 1.4em;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 1.2em;
+    }
+
+    .header-text {
+        flex: 5;
+        display: flex;
+        height: 100%;
+
+    .today-label {
+        flex: 1;
+        font-size: 0.8em;
+
+    &:hover{
+         cursor: pointer;
+         color: $background-color-dark;
+         background-color: $header-color;
+
+     }
+
+    }
+
+    .month-label {
+        flex: 3;
+    }
+    }
+    }
+
+    .days-header {
+        width: 100%;
+        height: 30%;
+        background-color: $background-color-main;
+    }
+
+    .button-container {
+        width: 100%;
+        height: 30%;
+        background-color: $background-color-main;
+    .event-button {
+        flex-grow: 1;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+    &:hover {
+         background-color: #fff;
+         color: $background-color-main;
+     }
+    }
+    }
+    }
+
+    .days-container {
+        width: 100%;
+        height: 70%;
+        background: $background-color-body;
+
+    .week {
+        height: 15%;
+    }
+    }
+
+    .day-events {
+        position: relative;
+        width: 100%;
+        height: 70%;
+        background-color: $background-color-body;
+        font-size: 1.2em;
+
+    .event-container {
+        width: 100%;
+        text-align: center;
+        display: flex;
+
+    &:hover {
+         cursor: pointer;
+     }
+
+    //             @for $i from 1 through 12 {
+    //               &:nth-child(#{$i}) {
+    //                 > .animated-time {
+                       //                   background-color: mix($background-color-dark, $background-color-light-4, percentage(($i - 1) / 12));
+                       //                 }
+
+    //                 > .animated-title {
+                       //                   background-color: mix($background-color-dark, white, percentage(($i - 1) / 12));
+                       //                 }
+    //               }
+    //             }
+
+    .animated-time {
+        width: 30%;
+
+    .event-time {
+    }
+    }
+
+    .animated-title {
+        width: 70%;
+
+    .event-title {
+    }
+    }
+
+    .event-attribute {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+    }
+    }
+    } //End of calendar container
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .box {
+    //grow in parent (child property)
+    flex-grow: 1;
+    //parent properties
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+        transition: all 0.4s ease-in-out 0s;
+
+    &.arrow {
+    &:hover {
+         background-color: white;
+         cursor: pointer;
+         color: $background-color-dark;
+         transition: all 0.2s ease-in-out 0s;
+     }
+    }
+    }
+
+    .day {
+    //grow in parent (child property)
+    //flex-grow: 1;
+    //parent properties
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+
+    .day-number {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $background-color-body;
+        box-sizing: border-box;
+        border-radius: 50%;
+    }
+
+    &:hover {
+    .day-number {
+        cursor: default;
+        background-color: $background-color-light-3;
+        color: $background-color-body;
+        transition: background-color 0.2s ease-in-out 0s;
+    }
+    }
+
+    &.today {
+    .day-number {
+    // background-color: $background-color-light-3;
+    // color: $background-color-dark;
+        border: 1px solid $background-color-light-3;
+    }
+    }
+
+    &.has-events {
+    .day-number {
+        color: $background-color-dark;
+        font-weight: bold;
+    }
+    }
+
+    &.selected {
+    .day-number {
+    }
+    }
+
+    &.different-month {
+         opacity: 0.5;
+     }
+    }
+
+    @mixin slide-animation($translate-position) {
+        transform: translateX($translate-position);
+        transition: all $animation-delay cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    }
+
+    /* time animation */
+    .time-appear {
+        @include slide-animation(-100%);
+    }
+
+    .time-appear {
+    &.time-appear-active {
+         @include slide-animation(0);
+     }
+    }
+
+    .time-enter {
+        @include slide-animation(-100%);
+    }
+
+    .time-enter {
+    &.time-enter-active {
+         @include slide-animation(0);
+     }
+    }
+
+    .time-leave {
+        @include slide-animation(-100%);
+    }
+
+    .time-leave {
+    &.time-leave-active {
+         @include slide-animation(0);
+     }
+    }
+
+    /* title animation */
+    .title-appear {
+        @include slide-animation(100%);
+    }
+
+    .title-appear {
+    &.title-appear-active {
+         @include slide-animation(0);
+     }
+    }
+
+    .title-enter {
+        @include slide-animation(100%);
+    }
+
+    .title-enter {
+    &.title-enter-active {
+         @include slide-animation(0);
+     }
+    }
+
+    .title-leave {
+        @include slide-animation(100%);
+    }
+
+    .title-leave {
+    &.title-leave-active {
+         @include slide-animation(0);
+     }
+    }
+
+</style>
+
+<script>
+    /* Based on https://www.codementor.io/chrisharrington/building-a-calendar-using-react-js--less-css-and-font-awesome-du107z6nt */
+    /* similar solution https://codepen.io/nickjvm/pen/bERraX */
+    /* https://dribbble.com/shots/2335073-Calendar-App-Animation */
+    /* https://stackoverflow.com/questions/16469548/overflowhidden-not-working-with-translation-in-positive-direction */
+
+    const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+
+    class Calendar extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                selectedMonth: moment(),
+                selectedDay: moment().startOf("day"),
+                selectedMonthEvents: [],
+                showEvents: false
+            };
+
+            this.previous = this.previous.bind(this);
+            this.next = this.next.bind(this);
+            this.addEvent = this.addEvent.bind(this);
+            this.showCalendar = this.showCalendar.bind(this);
+            this.goToCurrentMonthView = this.goToCurrentMonthView.bind(this);
+
+            this.initialiseEvents();
+        }
+
+        previous() {
+            const currentMonthView = this.state.selectedMonth;
+
+            this.setState({
+                selectedMonth: currentMonthView.subtract(1, "month")
+            });
+        }
+
+        next() {
+            const currentMonthView = this.state.selectedMonth;
+            this.setState({
+                selectedMonth: currentMonthView.add(1, "month")
+            });
+        }
+
+        select(day) {
+            this.setState({
+                selectedMonth: day.date,
+                selectedDay: day.date.clone(),
+                showEvents: true
+            });
+        }
+
+        goToCurrentMonthView(){
+            const currentMonthView = this.state.selectedMonth;
+            this.setState({
+                selectedMonth: moment()
+            });
+        }
+
+        showCalendar() {
+            this.setState({
+                selectedMonth: this.state.selectedMonth,
+                selectedDay: this.state.selectedDay,
+                showEvents: false
+            });
+        }
+
+        renderMonthLabel() {
+            const currentMonthView = this.state.selectedMonth;
+            return (
+                <span className="box month-label">
+        {currentMonthView.format("MMMM YYYY")}
+      </span>
+            );
+        }
+
+        renderDayLabel() {
+            const currentSelectedDay = this.state.selectedDay;
+            return (
+                <span className="box month-label">
+        {currentSelectedDay.format("DD MMMM YYYY")}
+      </span>
+            );
+        }
+
+        renderTodayLabel() {
+            const currentSelectedDay = this.state.selectedDay;
+            return (
+                <span className="box today-label" onClick={this.goToCurrentMonthView}>
+        Today
+      </span>
+            );
+        }
+
+        renderWeeks() {
+            const currentMonthView = this.state.selectedMonth;
+            const currentSelectedDay = this.state.selectedDay;
+            const monthEvents = this.state.selectedMonthEvents;
+
+            let weeks = [];
+            let done = false;
+            let previousCurrentNextView = currentMonthView
+                .clone()
+                .startOf("month")
+                .subtract(1, "d")
+                .day("Monday");
+            let count = 0;
+            let monthIndex = previousCurrentNextView.month();
+
+            while (!done) {
+                weeks.push(
+                    <Week
+                        previousCurrentNextView={previousCurrentNextView.clone()}
+                        currentMonthView={currentMonthView}
+                        monthEvents={monthEvents}
+                        selected={currentSelectedDay}
+                        select={day => this.select(day)}
+                    />
+                );
+                previousCurrentNextView.add(1, "w");
+                done = count++ > 2 && monthIndex !== previousCurrentNextView.month();
+                monthIndex = previousCurrentNextView.month();
+            }
+            return weeks;
+        }
+
+        handleAdd() {
+            const monthEvents = this.state.selectedMonthEvents;
+            const currentSelectedDate = this.state.selectedDay;
+
+            let newEvents = [];
+
+            var eventTitle = prompt("Please enter a name for your event: ");
+
+            switch (eventTitle) {
+                case "":
+                    alert("Event name cannot be empty.");
+                    break;
+                case null:
+                    alert("Changed your mind? You can add one later!");
+                    break;
+                default:
+                    var newEvent = {
+                        title: eventTitle,
+                        date: currentSelectedDate,
+                        dynamic: true
+                    };
+
+                    newEvents.push(newEvent);
+
+                    for (var i = 0; i < newEvents.length; i++) {
+                        monthEvents.push(newEvents[i]);
+                    }
+
+                    this.setState({
+                        selectedMonthEvents: monthEvents
+                    });
+                    break;
+            }
+        }
+
+        addEvent() {
+            const currentSelectedDate = this.state.selectedDay;
+            let isAfterDay = moment().startOf("day").subtract(1, "d");
+
+            if (currentSelectedDate.isAfter(isAfterDay)) {
+                this.handleAdd();
+            } else {
+                if (confirm("Are you sure you want to add an event in the past?")) {
+                    this.handleAdd();
+                } else {
+                } // end confirm past
+            } //end is in the past
+        }
+
+        removeEvent(i) {
+            const monthEvents = this.state.selectedMonthEvents.slice();
+            const currentSelectedDate = this.state.selectedDay;
+
+            if (confirm("Are you sure you want to remove this event?")) {
+                let index = i;
+
+                if (index != -1) {
+                    monthEvents.splice(index, 1);
+                } else {
+                    alert("No events to remove on this day!");
+                }
+
+                this.setState({
+                    selectedMonthEvents: monthEvents
+                });
+            }
+        }
+
+        initialiseEvents() {
+            const monthEvents = this.state.selectedMonthEvents;
+
+            let allEvents = [];
+
+            var event1 = {
+                title:
+                    "Press the Add button and enter a name for your event. P.S you can delete me by pressing me!",
+                date: moment(),
+                dynamic: false
+            };
+
+            var event2 = {
+                title: "Event 2 - Meeting",
+                date: moment().startOf("day").subtract(2, "d").add(2, "h"),
+                dynamic: false
+            };
+
+            var event3 = {
+                title: "Event 3 - Cinema",
+                date: moment().startOf("day").subtract(7, "d").add(18, "h"),
+                dynamic: false
+            };
+
+            var event4 = {
+                title: "Event 4 - Theater",
+                date: moment().startOf("day").subtract(16, "d").add(20, "h"),
+                dynamic: false
+            };
+
+            var event5 = {
+                title: "Event 5 - Drinks",
+                date: moment().startOf("day").subtract(2, "d").add(12, "h"),
+                dynamic: false
+            };
+
+            var event6 = {
+                title: "Event 6 - Diving",
+                date: moment().startOf("day").subtract(2, "d").add(13, "h"),
+                dynamic: false
+            };
+
+            var event7 = {
+                title: "Event 7 - Tennis",
+                date: moment().startOf("day").subtract(2, "d").add(14, "h"),
+                dynamic: false
+            };
+
+            var event8 = {
+                title: "Event 8 - Swimmming",
+                date: moment().startOf("day").subtract(2, "d").add(17, "h"),
+                dynamic: false
+            };
+
+            var event9 = {
+                title: "Event 9 - Chilling",
+                date: moment().startOf("day").subtract(2, "d").add(16, "h"),
+                dynamic: false
+            };
+
+            var event10 = {
+                title:
+                    "Hello World",
+                date: moment().startOf("day").add(5, "h"),
+                dynamic: false
+            };
+
+            allEvents.push(event1);
+            allEvents.push(event2);
+            allEvents.push(event3);
+            allEvents.push(event4);
+            allEvents.push(event5);
+            allEvents.push(event6);
+            allEvents.push(event7);
+            allEvents.push(event8);
+            allEvents.push(event9);
+            allEvents.push(event10);
+
+            for (var i = 0; i < allEvents.length; i++) {
+                monthEvents.push(allEvents[i]);
+            }
+
+            this.setState({
+                selectedMonthEvents: monthEvents
+            });
+        }
+
+        render() {
+            const currentMonthView = this.state.selectedMonth;
+            const currentSelectedDay = this.state.selectedDay;
+            const showEvents = this.state.showEvents;
+
+            if (showEvents) {
+                return (
+                    <section className="main-calendar">
+                        <header className="calendar-header">
+                            <div className="row title-header">
+                                {this.renderDayLabel()}
+                            </div>
+                            <div className="row button-container">
+                                <i
+                                    className="box arrow fa fa-angle-left"
+                                    onClick={this.showCalendar}
+                                />
+                                <i
+                                    className="box event-button fa fa-plus-square"
+                                    onClick={this.addEvent}
+                                />
+                            </div>
+                        </header>
+                        <Events
+                            selectedMonth={this.state.selectedMonth}
+                            selectedDay={this.state.selectedDay}
+                            selectedMonthEvents={this.state.selectedMonthEvents}
+                            removeEvent={i => this.removeEvent(i)}
+                        />
+                    </section>
+                );
+            } else {
+                return (
+                    <section className="main-calendar">
+                        <header className="calendar-header">
+                            <div className="row title-header">
+                                <i
+                                    className="box arrow fa fa-angle-left"
+                                    onClick={this.previous}
+                                />
+                                <div className="box header-text">
+                                    {this.renderTodayLabel()}
+                                    {this.renderMonthLabel()}
+                                </div>
+                                <i className="box arrow fa fa-angle-right" onClick={this.next} />
+                            </div>
+                            <DayNames />
+                        </header>
+                        <div className="days-container">
+                            {this.renderWeeks()}
+                        </div>
+                    </section>
+                );
+            }
+        }
+    }
+
+    class Events extends React.Component {
+        render() {
+            const currentMonthView = this.props.selectedMonth;
+            const currentSelectedDay = this.props.selectedDay;
+            const monthEvents = this.props.selectedMonthEvents;
+            const removeEvent = this.props.removeEvent;
+
+            const monthEventsRendered = monthEvents.map((event, i) => {
+                return (
+                    <div
+                        key={event.title}
+                        className="event-container"
+                        onClick={() => removeEvent(i)}
+                    >
+                        <ReactCSSTransitionGroup
+                            component="div"
+                            className="animated-time"
+                            transitionName="time"
+                            transitionAppear={true}
+                            transitionAppearTimeout={500}
+                            transitionEnterTimeout={500}
+                            transitionLeaveTimeout={500}
+                        >
+                            <div className="event-time event-attribute">
+                                {event.date.format("HH:mm")}
+                            </div>
+                        </ReactCSSTransitionGroup>
+                        <ReactCSSTransitionGroup
+                            component="div"
+                            className="animated-title"
+                            transitionName="title"
+                            transitionAppear={true}
+                            transitionAppearTimeout={500}
+                            transitionEnterTimeout={500}
+                            transitionLeaveTimeout={500}
+                        >
+                            <div className="event-title event-attribute">{event.title}</div>
+                        </ReactCSSTransitionGroup>
+                    </div>
+                );
+            });
+
+            const dayEventsRendered = [];
+
+            for (var i = 0; i < monthEventsRendered.length; i++) {
+                if (monthEvents[i].date.isSame(currentSelectedDay, "day")) {
+                    dayEventsRendered.push(monthEventsRendered[i]);
+                }
+            }
+
+            return (
+                <div className="day-events">
+                    {dayEventsRendered}
+                </div>
+            );
+        }
+    }
+
+    class DayNames extends React.Component {
+        render() {
+            return (
+                <div className="row days-header">
+                    <span className="box day-name">Mon</span>
+                    <span className="box day-name">Tue</span>
+                    <span className="box day-name">Wed</span>
+                    <span className="box day-name">Thu</span>
+                    <span className="box day-name">Fri</span>
+                    <span className="box day-name">Sat</span>
+                    <span className="box day-name">Sun</span>
+                </div>
+            );
+        }
+    }
+
+    class Week extends React.Component {
+        render() {
+            let days = [];
+            let date = this.props.previousCurrentNextView;
+            let currentMonthView = this.props.currentMonthView;
+            let selected = this.props.selected;
+            let select = this.props.select;
+            let monthEvents = this.props.monthEvents;
+
+            for (var i = 0; i < 7; i++) {
+                var dayHasEvents = false;
+
+                for (var j = 0; j < monthEvents.length; j++) {
+                    if (monthEvents[j].date.isSame(date, "day")) {
+                        dayHasEvents = true;
+                    }
+                }
+
+                let day = {
+                    name: date.format("dd").substring(0, 1),
+                    number: date.date(),
+                    isCurrentMonth: date.month() === currentMonthView.month(),
+                    isToday: date.isSame(new Date(), "day"),
+                    date: date,
+                    hasEvents: dayHasEvents
+                };
+
+                days.push(<Day day={day} selected={selected} select={select} />);
+                date = date.clone();
+                date.add(1, "d");
+            }
+            return (
+                <div className="row week">
+                    {days}
+                </div>
+            );
+        }
+    }
+
+    class Day extends React.Component {
+        render() {
+            let day = this.props.day;
+            let selected = this.props.selected;
+            let select = this.props.select;
+
+            return (
+                <div
+                    className={
+                        "day" +
+                        (day.isToday ? " today" : "") +
+                        (day.isCurrentMonth ? "" : " different-month") +
+                        (day.date.isSame(selected) ? " selected" : "") +
+                        (day.hasEvents ? " has-events" : "")
+                    }
+                    onClick={() => select(day)}
+                >
+                    <div className="day-number">{day.number}</div>
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(<Calendar />, document.getElementById("calendar-content"));
+
+</script>
