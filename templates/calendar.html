@@ -1,16 +1,22 @@
-<!DOCTYPE html>
-{% extends "layouts/base.html" %}
-<html lang="en">
-{% block body %}
-<head>
-    <meta charset="UTF-8">
-    <title>Calendar</title>
-    <center>
-        <iframe src="https://calendar.google.com/calendar/embed?src=ue5aabvvlfqkutr5ee246mibt8%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>    </center>
-</head>
-</center>
-<body>
+{% include "layouts/base.html" %}
 
-</body>
-{% endblock %}
-</html>
+<div id="cal-wrap">
+    <!-- (A) PERIOD SELECTOR -->
+    <div id="cal-date">
+        <select id="cal-mth"></select>
+        <select id="cal-yr"></select>
+    </div>
+
+    <!-- (B) CALENDAR -->
+    <div id="cal-container"></div>
+
+    <!-- (C) EVENT FORM -->
+    <form id="cal-event">
+        <h1 id="evt-head"></h1>
+        <div id="evt-date"></div>
+        <textarea id="evt-details" required></textarea>
+        <input id="evt-close" type="button" value="Close"/>
+        <input id="evt-del" type="button" value="Delete"/>
+        <input id="evt-save" type="submit" value="Save"/>
+    </form>
+</div>
