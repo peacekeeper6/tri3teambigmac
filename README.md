@@ -8,7 +8,8 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Week 0](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-0)
 - [Week 1](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-1)
 - [Weeks 2-6](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#weeks-2-6)
-- [Week 7](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-7)
+- [Week 7 + 8](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-7)
+- [Week 9]()
 
 ### Runtime Link
 To be determined!
@@ -72,7 +73,7 @@ Everyone | Review Ticket Week 1 | [Week 1 Review Ticket](https://github.com/jean
 ### Weeks 2-6
 - AP EXAM Preparation and Data Structures Project
 
-### Week 7
+### Week 7 + 8
 Name | Requirements | Evidence | Grade |
 ---- | ------------ | -------- | ----- |
 Jean Kim | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project | [Link to scrum board with review tickets](https://github.com/jeankim05/tri3teambigmac/projects/1) | 3/3
@@ -80,4 +81,13 @@ Jun Lim | Individual Github Pages, Transition to PBL and Presentation of Sponsor
 Connor Wang | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  |[Link to scrum board with review tickets](https://github.com/jeankim05/tri3teambigmac/projects/1) | 3/3 
 Aidan Wu | Individual Github Pages, Transition to PBL and Presentation of Sponsor Project  | [Link to scrum board with review tickets](https://github.com/jeankim05/tri3teambigmac/projects/1) | 3/3
 Everyone | Review Ticket Week 7 | [Week 7 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/38)
+
+### Week 9
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Club Information, Ocean Information, Announcements | [Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/56) | Crossover and Teacher Grade
+Jun Lim | Deployment with AWS + Calendar Updates  |[Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/54) | Crossover and Teacher Grade
+Connor Wang | Get Involved Page, Updating Home Page  |[Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/55) | Crossover and Teacher Grade
+Aidan Wu | SQL Database, Notes Incorporation, Timeline  | [Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/53) | Crossover and Teacher Grade
+Everyone | Review Ticket Week 9 | [Week 9 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/52) | Team Grading
 
