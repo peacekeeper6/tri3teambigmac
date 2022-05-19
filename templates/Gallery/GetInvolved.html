@@ -7,31 +7,60 @@
     <title>Get Involved with POO!</title>
     <style>
         .container {
-            position: relative;
-            width: 50%;
+            width:685px;
+            height:250px;
+            background-color:lightblue;
+            padding-top:20px;
+            padding-left:15px;
+            padding-right:15px;
         }
-
-        .image {
-            opacity: 1;
+        #left-box {
+            float:left;
+            width:205px;
+            height:200px;
+            background-color:white;
+            border:solid black;
+            text-align:center;
+        }
+        #left-box:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        #middle-box {
+            float:left;
+            width:205px;
+            height:200px;
+            background-color:white;
+            border:solid black;
+            margin-left:20px;
+        }
+        #middle-box:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        #right-box {
+            float:right;
+            width:205px;
+            height:200px;
+            background-color:white;
+            border:solid black;
+        }
+        #right-box:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        h1 {
+            color:royalblue;
+            text-align: center;
+        }
+        h2 {
+            color: royalblue;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .center {
             display: block;
-            width: 40%;
-            height: 20%;
-            transition: .5s ease;
-            backface-visibility: hidden;
-        }
-        .container:hover .image {
-            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-        }
-
-        .container:hover .middle {
-            opacity: 1;
-        }
-
-        .text {
-            background-color: #4CAF50;
-            color: white;
-            font-size: 16px;
-            padding: 16px 32px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -39,16 +68,25 @@
 {% block body %}
 <body>
 <div>
+    <h1>Get Involved with Project Protect Our Ocean!</h1>
+    <h2>Click on the images to get links to our discord, instagram and more!</h2>
+
     <div class="container">
-        <p>Join Discord!</p>
-        <img class="image" onclick="window.open('https://discord.gg/6rkJSmfarT','_blank')" src="static/assets/oceandiscord.png" alt="Disc">
+        <div id="left-box">
+            <p>Join Discord!</p>
+            <img class="center" style="width:200px; height:150px;" onclick="window.open('https://discord.gg/6rkJSmfarT','_blank')" src="static/assets/woceandiscord.png" alt="Disc">
+        </div>
+
+        <div id="middle-box">
+            <p>Follow us on Instagram!</p>
+            <img style="width:200px; height:150px;" class="image" onclick="window.open('https://www.instagram.com/dnppoo/','_blank')" src="static/assets/insta.png" alt="IG">
+        </div>
+
+        <div id="right-box">
+            <p>Join our Remind!</p>
+            <img class="center" style="width:200px; height:150px;" class="image" onclick="window.open('','_blank')" src="static/assets/remind.png" alt="remind">
+        </div>
     </div>
-    <div class="container">
-        <p>Follow us on Instagram!</p>
-        <img class="image" onclick="window.open('https://www.instagram.com/dnppoo/','_blank')" src="static/assets/insta.png" alt="IG">
-    </div>
-</div>
-</div>
 </body>
 </html>
 {% endblock %}
