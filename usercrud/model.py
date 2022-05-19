@@ -13,6 +13,7 @@ from flask_login import UserMixin
 # -- b.) Users represents data we want to store, something that is built on db.Model
 # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
 class Users(UserMixin, db.Model):
+    __tablename__ = "users"
     # define the Users schema
     userID = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
@@ -20,6 +21,8 @@ class Users(UserMixin, db.Model):
     password = db.Column(db.String(255), unique=False, nullable=False)
     phone = db.Column(db.String(255), unique=False, nullable=False)
     privilege = db.Column(db.Integer, unique=False, nullable=False)
+
+    timeline = db.relationship("Timeline", cascade='all, delete', backref='users', lazy=True)
 
     # constructor of a User object, initializes of instance variables within object
     def __init__(self, name, email, password, phone, privilege):
