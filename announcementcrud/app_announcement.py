@@ -14,6 +14,12 @@ app_announcement = Blueprint('announcement', __name__,
                          static_url_path='static')
 
 
+def ann_all_alc():
+    table = Announcement.query.all()
+    json_ready = [peep.read() for peep in table]
+    return json_ready
+
+
 @app_announcement.route('/')
 @login_required
 def announcement():
