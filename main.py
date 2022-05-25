@@ -3,11 +3,13 @@ from __init__ import app
 
 from usercrud.app_crud import app_crud
 from timelinecrud.app_timeline import app_timeline
+from announcementcrud.app_announcement import app_announcement
 # from cruddy.app_crud_api import app_crud_api
 
 
 app.register_blueprint(app_crud)
 app.register_blueprint(app_timeline)
+app.register_blueprint(app_announcement)
 # app.register_blueprint(app_crud_api)
 
 
@@ -37,9 +39,9 @@ def GetInvolved():
 def error(e):
     return render_template("404.html"), 404
 
-@app.route('/announcement')
-def announcement():
-    return render_template("announcement.html")
+@app.route('/displayannouncement')
+def displayannouncement():
+    return render_template("displayannouncement.html")
 
 @app.route('/oceaninformation')
 def oceaninformation():
