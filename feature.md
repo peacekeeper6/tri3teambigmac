@@ -62,3 +62,7 @@ Everyone | Review Ticket Week 9 | [Week 9 Review Ticket](https://github.com/jean
 * Because the club is operating now with lots of members, new club officers have been appointed
 * They have been added to the about us page as well as the announcements page
 * New updates include club meetings and discord servers that we will use for mass communication
+
+### Week 10 Project Owner Meeting Notes
+* Incorporate ways for the users to have fun --> games, quizzes, etc
+* Clean up overall website so that each page within the site has similar layouts, colors, and themes.
