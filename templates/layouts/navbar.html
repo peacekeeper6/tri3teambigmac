@@ -15,12 +15,13 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <a class="nav-link" href={{ url_for('index') }}>Welcome</a>
             <a class="nav-link" href="/GetInvolved">Get Involved</a>
             <a class="nav-link" href="/calendar">Events Calendar</a>
-            <a class="nav-link" href="/announcement">Announcements</a>
+            <a class="nav-link" href="/displayannouncement">Announcements</a>
             <a class="nav-link" href="/oceaninformation">Ocean Information</a>
             <a class="nav-link" href="/oceanquiz">Ocean Quiz</a>
             <a class="nav-link" href="/meettheteam">Meet The Team</a>
             {% if current_user['name']|length != 0 %}
             <a class="nav-link" href="/timeline">Timeline</a>
+            <a class="nav-link" href="/announcement">Announcement</a>
             <a class="nav-link" href="/crud">Database</a>
             {% endif %}
             <!-- stub is shown using the name of the route -->

@@ -20,6 +20,17 @@
                         <div>
                             <ul class="nolist list-unstyled position-relative mb-0 px-lg-5 pt-lg-5">
 
+                                {% for content in ann %}
+                                    <li class="border-bottom pb-3 mt-3">
+                                        <span class="meta text">{{ content.timestamp | safe }}</span>
+                                        <h3 class="font-weight-bold mt-0">
+                                            <p>{{ content.content | safe }}</p>
+                                        </h3>
+{#                                        <p>{{ content.content | safe }}</p>#}
+                                    </li>
+                                {% endfor %}
+
+
                                 <li class="border-bottom pb-3 mt-3">
                                     <span class="meta text">May 18, 2022</span>
                                     <h3 class="font-weight-bold mt-0">

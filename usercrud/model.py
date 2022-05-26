@@ -3,8 +3,55 @@ from __init__ import db
 from sqlalchemy.exc import IntegrityError
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
+from random import randrange
 
 
+########################
+class Announcement(db.Model):
+    __tablename__ = 'announcement'
+
+    # Define the Notes schema
+    id = db.Column(db.Integer, primary_key=True)
+    content = db.Column(db.Text, unique=False, nullable=False)
+    # Define a relationship in Notes Schema to userID who originates the note, many-to-one (many notes to one user)
+    timestamp = db.Column(db.Text, unique=False, nullable=False)
+    userID = db.Column(db.Integer, db.ForeignKey('users.userID'))
+
+    # Constructor of a Notes object, initializes of instance variables within object
+    def __init__(self, content, timestamp, userID):
+        self.content = content
+        self.timestamp = timestamp
+        self.userID = userID
+
+    # Returns a string representation of the Notes object, similar to java toString()
+    # returns string
+    def __repr__(self):
+        return "Announcement(" + str(self.id) + "," + self.content + "," + self.timestamp + "," + str(self.userID) + ")"
+
+    # CRUD create, adds a new record to the Notes table
+    # returns the object added or None in case of an error
+    def create(self):
+        try:
+            # creates a Notes object from Notes(db.Model) class, passes initializers
+            db.session.add(self)  # add prepares to persist person object to Notes table
+            db.session.commit()  # SqlAlchemy "unit of work pattern" requires a manual commit
+            return self
+        except IntegrityError:
+            db.session.remove()
+            return None
+
+    # CRUD read, returns dictionary representation of Notes object
+    # returns dictionary
+    def read(self):
+        return {
+            "id": self.id,
+            "content": self.content,
+            "timestamp": self.timestamp,
+            "userID": self.userID
+        }
+
+
+###########################
 # Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into Python shell and follow along
 
 # Define the Users table within the model
@@ -23,8 +70,9 @@ class Users(UserMixin, db.Model):
     privilege = db.Column(db.Integer, unique=False, nullable=False)
 
     timeline = db.relationship("Timeline", cascade='all, delete', backref='users', lazy=True)
+    announcement = db.relationship("Announcement", cascade='all, delete', backref='users', lazy=True)
 
-    # constructor of a User object, initializes of instance variables within object
+# constructor of a User object, initializes of instance variables within object
     def __init__(self, name, email, password, phone, privilege):
         self.name = name
         self.email = email
@@ -95,40 +143,65 @@ class Users(UserMixin, db.Model):
 """Database Creation and Testing section"""
 
 
-def model_tester():
-    print("--------------------------")
-    print("Seed Data for Table: users")
-    print("--------------------------")
+def model_builder():
+    """Create database and tables"""
     db.create_all()
     """Tester data for table"""
-    u1 = Users(name='Thomas Edison', email='tedison@example.com', password='123toby', phone="1111111111")
-    u2 = Users(name='Nicholas Tesla', email='ntesla@example.com', password='123niko', phone="1111112222")
-    u3 = Users(name='Alexander Graham Bell', email='agbell@example.com', password='123lex', phone="1111113333")
-    u4 = Users(name='Eli Whitney', email='eliw@example.com', password='123whit', phone="1111114444")
-    u5 = Users(name='John Mortensen', email='jmort1021@gmail.com', password='123qwerty', phone="8587754956")
-    u6 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8587754956")
+    u1 = Users(name='Thomas Edison', email='tedison@example.com', password='123toby', phone="1111111111", privilege=2)
+    u2 = Users(name='Nicholas Tesla', email='ntesla@example.com', password='123niko', phone="1111112222", privilege=2)
+    u3 = Users(name='Alexander Graham Bell', email='agbell@example.com', password='123lex', phone="1111113333", privilege=2)
+    u4 = Users(name='Eli Whitney', email='eliw@example.com', password='123whit', phone="1111114444", privilege=2)
+    u5 = Users(name='John Mortensen', email='jmort1021@gmail.com', password='123qwerty', phone="8587754956", privilege=2)
+    # u6 intends to succeed with a unique email
+    u6 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8587754956", privilege=2)
     # U7 intended to fail as duplicate key
-    u7 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8586791294")
+    u7 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8586791294", privilege=2)
+
     table = [u1, u2, u3, u4, u5, u6, u7]
+
+    """Builds sample user/note(s) data"""
     for row in table:
         try:
+            '''add a few 1 to 4 notes per user'''
+            for num in range(randrange(1, 4)):
+                content = "#### " + row.name + " note " + str(num) + ". \n Generated by test data."
+                row.announcement.append(Announcement(content=content, userID=row.userID, timestamp=""))
+            '''add user/note data to table'''
             db.session.add(row)
             db.session.commit()
         except IntegrityError:
+            '''fails with bad or duplicate data'''
             db.session.remove()
             print(f"Records exist, duplicate email, or error: {row.email}")
 
 
-def model_printer():
-    print("------------")
-    print("Table: users with SQL query")
-    print("------------")
-    result = db.session.execute('select * from users')
-    print(result.keys())
-    for row in result:
-        print(row)
+# Looks into database
+def model_driver():
+    print("---------------------------")
+    print("Create Tables and Seed Data")
+    print("---------------------------")
+    model_builder()
+
+    print("---------------------------")
+    print("Table: " + Users.__tablename__)
+    print("Columns: ", Users.__table__.columns.keys())
+    print("---------------------------")
+    print("Table: " + Announcement.__tablename__)
+    print("Columns: ", Announcement.__table__.columns.keys())
+    print("---------------------------")
+    print()
+
+    users = Users.query
+    for user in users:
+        print("User" + "-" * 81)
+        print(user.read())
+        print("Notes" + "-" * 80)
+        for content in user.announcement:
+            print(content.read())
+        print("-" * 85)
+        print()
 
 
 if __name__ == "__main__":
-    model_tester()  # builds model of Users
-    model_printer()
+    model_builder()
+    model_driver()
