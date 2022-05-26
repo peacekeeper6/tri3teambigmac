@@ -3,11 +3,13 @@ from __init__ import app
 
 from usercrud.app_crud import app_crud
 from timelinecrud.app_timeline import app_timeline
+from templates.oceanquiz.questions import app_oceanquiz
 # from cruddy.app_crud_api import app_crud_api
 
 
 app.register_blueprint(app_crud)
 app.register_blueprint(app_timeline)
+app.register_blueprint(app_oceanquiz)
 # app.register_blueprint(app_crud_api)
 
 
@@ -47,7 +49,7 @@ def oceaninformation():
 
 @app.route('/oceanquiz')
 def oceanquiz():
-    return render_template("oceanquiz.html")
+    return render_template("oceanquiz/templates/oceanquiz.html")
 
 @app.route('/meettheteam')
 def meettheteam():
