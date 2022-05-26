@@ -1,0 +1,90 @@
+[
+  {
+    "questionID": "1",
+    "question": "Over what percent of our planet's oxygen levels are produced by the oceans?",
+    "a": "Over 50%",
+    "b": "Over 60%",
+    "c": "Over 70%",
+    "d": "Over 80%",
+    "correctAnswer": "c"
+  },
+  {
+    "questionID": "2",
+    "question": "What percent of the United States is underneath the oceans?",
+    "a": "40%",
+    "b": "50%",
+    "c": "60%",
+    "d": "70",
+    "correctAnswer": "b"
+  },
+  {
+    "questionID": "3",
+    "question": "About how many islands does the Pacific Ocean contain?",
+    "a": "25,000",
+    "b": "30,000",
+    "c": "40,000",
+    "d": "7",
+    "correctAnswer": "a"
+  },
+  {
+    "questionID": "4",
+    "question": " How many people have set foot on the Mariana Trench (lowest point in the ocean)?",
+    "a": "1",
+    "b": "2",
+    "c": "3",
+    "d": "4",
+    "correctAnswer": "c"
+  },
+  {
+    "questionID": "5",
+    "question": "About how many shipwrecks are in the oceans?",
+    "a": "3,000,000",
+    "b": "4,000,000",
+    "c": "5,000,000",
+    "d": "6,000,000"
+    "correctAnswer": "a"
+  },
+  {
+    "questionID": "6",
+    "question": "How deep is the Mariana Trench?",
+    "a": "6 miles",
+    "b": "6.5 miles",
+    "c": "7 miles",
+    "d": "7.5 miles",
+    "correctAnswer": "c"
+  },
+  {
+    "questionID": "7",
+    "question": "How long was the largest blue whale ever recorded?",
+    "a": "108 feet",
+    "b": "118 feet",
+    "c": "128 feet",
+    "d": "138 feet",
+    "correctAnswer": "a"
+  },
+  {
+    "questionID": "8. What is the largest ocean on Earth?",
+    "a": "Atlantic",
+    "b": "Indian",
+    "c": "Asian",
+    "d": "Pacific",
+    "correctAnswer": "d"
+  },
+  {
+    "questionID": "9",
+    "question": "What is the average depth of the ocean?",
+    "a": "11,100 feet",
+    "b": "12,100 feet",
+    "c": "13,100 feet",
+    "d": "14,100 feet",
+    "correctAnswer": "b"
+  },
+  {
+    "questionID": "10",
+    "question": "Where was the world record for deepest freedive set?",
+    "a": "Russia",
+    "b": "Greece",
+    "c": "Indonesia",
+    "d": "Peru",
+    "correctAnswer": "b",
+]
