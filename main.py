@@ -1,5 +1,10 @@
+import markdown
 from flask import render_template
 from __init__ import app
+from flask_login import current_user
+from announcementcrud.app_announcement import ann_all_alc, app_announcement
+
+from usercrud.query import user_by_id
 
 from usercrud.app_crud import app_crud
 from timelinecrud.app_timeline import app_timeline
@@ -9,7 +14,7 @@ from templates.oceanquiz.questions import app_oceanquiz
 
 app.register_blueprint(app_crud)
 app.register_blueprint(app_timeline)
-app.register_blueprint(app_oceanquiz)
+app.register_blueprint(app_announcement)
 # app.register_blueprint(app_crud_api)
 
 
@@ -39,9 +44,34 @@ def GetInvolved():
 def error(e):
     return render_template("404.html"), 404
 
-@app.route('/announcement')
-def announcement():
-    return render_template("announcement.html")
+@app.route('/displayannouncement')
+def displayannouncement():
+    # # defaults are empty, in case user data not found
+    # user = ""
+    # list_announcement = []
+    # print("in announcement")
+    # # grab user database object based on current login
+    # uo = user_by_id(current_user.userID)
+    #
+    # # if user object is found
+    # if uo is not None:
+    #     user = uo.read()  # extract user record (Dictionary)
+    #     if uo.announcement is None:
+    #         print("about to die")
+    #     for content in uo.announcement:  # loop through each user note
+    #         print(content)
+    #         content = content.read()  # extract note record (Dictionary)
+    #         content['content'] = markdown.markdown(content['content'])  # convert markdown to html
+    #         list_announcement.append(content)  # prepare note list for render_template
+    #     if list_announcement is not None:
+    #         list_announcement.reverse()
+    # # render user and note data in reverse chronological order(display latest notes rec on top)
+    # print(list_announcement)
+    list_announcement = ann_all_alc()
+    print(list_announcement)
+    if list_announcement is not None:
+        list_announcement.reverse()
+    return render_template('displayannouncement.html', ann=list_announcement)
 
 @app.route('/oceaninformation')
 def oceaninformation():

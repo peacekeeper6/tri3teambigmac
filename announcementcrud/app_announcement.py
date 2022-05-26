@@ -8,10 +8,10 @@ import pytz
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 app_announcement = Blueprint('announcement', __name__,
-                         url_prefix='/announcement',
-                         template_folder='templates/announcement/',
-                         static_folder='static',
-                         static_url_path='static')
+                             url_prefix='/announcement',
+                             template_folder='templates/announcement/',
+                             static_folder='static',
+                             static_url_path='static')
 
 
 def ann_all_alc():
