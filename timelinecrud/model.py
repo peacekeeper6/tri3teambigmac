@@ -20,17 +20,19 @@ class Timeline(db.Model):
     # Define a relationship in Notes Schema to userID who originates the note, many-to-one (many notes to one user)
     timestamp = db.Column(db.Text, unique=False, nullable=False)
     userID = db.Column(db.Integer, db.ForeignKey('users.userID'))
+    access = db.Column(db.Integer, unique=False, nullable=False)
 
     # Constructor of a Notes object, initializes of instance variables within object
-    def __init__(self, content, timestamp, userID):
+    def __init__(self, content, timestamp, userID, access):
         self.content = content
         self.timestamp = timestamp
         self.userID = userID
+        self.access = access
 
     # Returns a string representation of the Notes object, similar to java toString()
     # returns string
     def __repr__(self):
-        return "Timeline(" + str(self.id) + "," + self.content + "," + self.timestamp + "," + str(self.userID) + ")"
+        return "Timeline(" + str(self.id) + "," + self.content + "," + self.timestamp + "," + str(self.userID) + "," + str(self.access) + ")"
 
     # CRUD create, adds a new record to the Notes table
     # returns the object added or None in case of an error
@@ -51,7 +53,8 @@ class Timeline(db.Model):
             "id": self.id,
             "content": self.content,
             "timestamp": self.timestamp,
-            "userID": self.userID
+            "userID": self.userID,
+            "access": self.access
         }
 
 
