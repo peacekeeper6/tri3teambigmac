@@ -1,0 +1,53 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}
+    <title>Announcements</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom border-primary text-dark">
+            <span class="fs-4">Announcements Page</span>
+        </header>
+    </div>
+    <div class="container py-4 text-light bg-success">
+        <div class="container bg-secondary py-4">
+            <div class="p-5 mb-4 bg-light text-dark rounded-3">
+                <h2>Announcements</h2>
+                <hr>
+                <!--Notes input form, textarea supports multiple lines of input  -->
+                <form method="POST" ID="create" action={{url_for('announcement.create')}}>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th><label for="content">Post an announcement:</label></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><textarea rows="5" cols="100%" name="content" id="content" required></textarea></td>
+                            <td><input type="submit" value="Add" ></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <hr>
+                <!--Notes output area, Jinja lines iterate through notes,
+                    note.note is html converted from markdown -->
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                        {% for content in ann %}
+                            <tr>
+                                <td><br>{{ content.content | safe }}<br>{{ content.timestamp | safe }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
