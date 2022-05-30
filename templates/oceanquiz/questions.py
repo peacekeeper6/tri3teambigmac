@@ -1,6 +1,8 @@
 """ database dependencies to support Users db examples """
 from flask_sqlalchemy import SQLAlchemy
 from flask import Blueprint, render_template, request, redirect, url_for
+import random
+import numpy
 from sqlalchemy.exc import IntegrityError
 from flask_migrate import Migrate
 from __init__ import app
@@ -77,6 +79,12 @@ def oceanquiz():
                     "c": "C: Indonesia",
                     "d": "D: Peru",
                     "correctAnswer": "b"}]
+        # try:
+        #     result = questions[seq]
+        #     random.shuffle(result)
+        #     return result
+        # except:
+        #     return seq
         # d = dict(zip(questionID, questions))
         # json_object = json.dumps(d, indent=4)
         return render_template('oceanquiz/templates/oceanquiz.html', questions=questions)
