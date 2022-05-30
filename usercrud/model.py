@@ -72,7 +72,7 @@ class Users(UserMixin, db.Model):
     timeline = db.relationship("Timeline", cascade='all, delete', backref='users', lazy=True)
     announcement = db.relationship("Announcement", cascade='all, delete', backref='users', lazy=True)
 
-# constructor of a User object, initializes of instance variables within object
+    # constructor of a User object, initializes of instance variables within object
     def __init__(self, name, email, password, phone, privilege):
         self.name = name
         self.email = email
@@ -102,7 +102,7 @@ class Users(UserMixin, db.Model):
             "password": self.password,
             "phone": self.phone,
             "privilege": self.privilege
-            }
+        }
 
     # CRUD update: updates users name, password, phone
     # returns self
