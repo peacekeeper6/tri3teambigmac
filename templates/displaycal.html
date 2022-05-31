@@ -1,0 +1,53 @@
+{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+    <head>
+        <meta charset="UTF-8">
+        <title>Events calendar</title>
+        <style>
+            table, th, td {
+                border:5px solid lightblue;
+                font-size: 30px
+            }
+            .header {
+                padding: 60px;
+                text-align: center;
+                background: lightseagreen;
+                color: white;
+                font-size: 30px;
+            }
+            .event {
+                padding:60px;
+                text-align: center;
+                background: lightseagreen;
+                color: black;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+{% endblock %}
+{% block body %}
+    <body>
+    <div class="header">
+        <h1>Events Calendar</h1>
+    </div>
+    {% for content in calendar %}
+        <table>
+        <tr>
+
+        </tr>
+        <tr class="event">
+            <td style= "width:225px">{{ content.content | safe }}</td>
+            <td style= "width:225px">{{ content.content2 | safe }}</td>
+            <td style= "width:225px">{{ content.content3 | safe }}</td>
+            <td style= "width:225px">{{ content.content4 | safe }}</td>
+            <td style= "width:225px">{{ content.content5 | safe }}</td>
+            <td style= "width:225px">{{ content.content6 | safe }}</td>
+            <td style= "width:225px">{{ content.content7 | safe }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    </body>
+{% endblock %}
+</html>
