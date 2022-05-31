@@ -28,7 +28,11 @@
                         <td><textarea rows="5" cols="100%" name="content" id="content" required></textarea></td>
                         <td><input type="submit" value="Add" ></td>
                     </tr>
-                    </tbody>
+                    <label for="access">Do you want your post to be public or private?</label>
+                    <select name="access" id="access">
+                        <option value="0">Private</option>
+                        <option value="1">Public</option>
+                    </select>
                 </table>
             </form>
             <hr>
@@ -39,7 +43,7 @@
                     <tbody>
                     {% for content in timeline %}
                     <tr>
-                        <td>{{ content.content | safe }}{{ content.timestamp | safe }}</td>
+                        <td>{{ content.content | safe }}<br><br>{{ user_by_id(content.userID).name | safe }}<br>{{ content.timestamp | safe }}<br>{{"private" if content.access == 0}}{{"public" if content.access == 1}}</td>
                     </tr>
                     {% endfor %}
                     </tbody>

@@ -1,44 +1,29 @@
 {% extends "layouts/base.html" %}
-{% set questions = questions %}
+<!DOCTYPE html>
+<html lang="en">
 
-{#OBJECTIVES:#}
-{#[IF] JSON LIST IS PARSED AND/OR CALLED#}
-{#[THEN] QUESTIONS WILL BE DISPLAYED RANDOMLY BASED OFF OF THE QUESTIONS.JSON FILE#}
-{#[IF] WRONG ANSWER IS CHOSEN, SUBTRACT 1 FROM 10#}
-{#[IF] RIGHT ANSWER IS CHOSEN, DO NOT SUBTRACT#}
-{#GOAL: to add high score container that allows the user to see their high score in comparison to others set#}
-<!DOCTYPE>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Ocean Quiz</title>
+</head>
+
 {% block body %}
-    <h1 class="center-block" style=" text-align:center; font-family: serif"> Ocean Quiz</h1>
-    <h3 style="text-align: center;padding-left:25px; font-size: 25px">Welcome to our quiz! Click the corresponding letter to your answer to all the questions and then submit. This mini quiz will test you on common ocean facts. </h3>
-{#    <h4 style="text-align: center; font-size: 20px">Correct Answers Show up in Green while incorrect answers show up in red. Scroll all the way down for results. Good luck!</h4>#}
-{#    <div id="currentTime"></div>#}
-{#    <div id="questionsDiv"></div>#}
-{#    <script src="questions.js"></script>#}
-
     <style>
         body{
             font-size: 15px;
             font-family: baskerville;
             color: #333;
             background-color: lightskyblue;
-        }
-        .question{
             font-weight: 600;
-            margin-left: 50px;
+            {#margin-left: 50px;#}
         }
-        .answers {
-            margin-bottom: 20px;
-            margin-left: 100px;
-        }
-        .answers label{
-            display: block;
-        }
-        #submit{
-
+        #startButton{
             font-family: sans-serif;
-            font-size: 20px;
-            background-color: blue;
+            font-size: 15px;
+            background-color: lightpink;
             color: black;
             border: 0px;
             border-radius: 3px;
@@ -47,74 +32,69 @@
             margin-bottom: 20px;
             margin-left: 100px;
         }
-        #submit:hover{
-            background-color: lightpink;
+        #startButton:hover{
+            background-color: blue;
         }
-
     </style>
-{#    <p id='main'></p>#}
-{#    <script type="text/javascript" src="oceanquiz/js/questions.js">#}
-{#        import json#}
-{#        f = open('oceanquiz/js/questions.js',)#}
-{#        data = json.load(f)#}
-{#        type(data)#}
-    {#var mydata = JSON.parse(questions);#}
-{##}
-{#    </script>#}
+<body>
+<div class="container">
+    <header class="row">
+        <div class="col-md-6" id="Highscores">
+            <a href="oceanquiz/templates/highscores.html">View Highscores</a>
+        </div>
+        <div class="col-md-6" id="timer">
+            Time: <span id="time">0</span>
+        </div>
 
+    </header>
 
-<div>
-    <div>
-        {% for i in range(questions|length) %}
-            <div class="py-2 h5" id={{ i + 1 }}><b>Q. {{ questions[i]["question"] }}</b></div>
-            <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
-                <label class="options">
-                    <input id="choice" type="radio" name="radio">
-                    <span class="checkmark">{{ questions[i]["a"] }}</span>
-                </label>
-                <br>
-                <label class="options">
-                    <input id="choice" type="radio" name="radio">
-                    <span class="checkmark">{{ questions[i]["b"] }}</span>
-                </label>
-                <br>
-                <label class="options">
-                    <input id="choice" type="radio" name="radio">
-                    <span class="checkmark">{{ questions[i]["c"] }}</span>
-                </label>
-                <br>
-                <label class="options">
-                    <input id="choice" type="radio" name="radio">
-                    <span class="checkmark">{{ questions[i]["d"] }}</span>
-                </label>
+    <section id="title-section" class="show">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Ocean Quiz</h1>
             </div>
-    </div>
-</div>
-        {% endfor %}
-<button id="submit">Submit Answers</button>
-    <script>
-var questionsDiv = document.querySelector("#questionsDiv");
-var score = 10;
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Welcome to our quiz! Click the corresponding letter to your answer to all the questions and then submit. This mini quiz will test you on common ocean facts.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button id="startButton">Start Quiz</button>
+            </div>
+        </div>
+    </section>
 
-const element = document.getElementById("choice");
-element.addEventListener("click", showResults);
+    <section id="quiz-section" class="hide">
+        <div class="row">
+            <div class="col-md-12 questions">
+                <h3 id="question-title"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="choices"></div>
+            <div id="feedback" class="feedback hide"></div>
+        </div>
+    </section>
 
-            function showResults(element){
-                if (questions[i][element] == questions[i][correctAnswer]) {
-                    displayMessage("Correct!")
-                }
-                else {
-                    displayMessage("Try Again")
-                    score = score - 1
-                }}
+    <section id="highscore-section" class="hide">
+        <div class="row">
+            <div id="high-score" class="col-md-12">
+                <h2>All done!</h2>
+                <h3>Your final score is <span id="final-score">0</span></h3>
+                <label for="initials-area">Enter initials:</label>
+                <input type="text" name="initials-area" maxlength="4" id="initials">
+                <button id="submit-button" type="submit">Submit</button>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="oceanquiz/js/questions.js"></script>
+    <script type="text/javascript" src="oceanquiz/js/script.js"></script>
+    <script type="text/javascript" src="oceanquiz/js/highscores.js"></script>
 
-            {#submitButton.addEventListener('click', showResults);#}
-        // })();
-    </script>
-    <style>
-        #results {
-            text-align: center; font-size: 35px
-        }
-    </style>
+</body>
+
+</html>
 
 {% endblock %}
