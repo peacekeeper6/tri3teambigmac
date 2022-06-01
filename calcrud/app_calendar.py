@@ -57,3 +57,4 @@ def create():
         # create a record in the Notes table with the Notes object
         content_object.create()
     return redirect(url_for('calendar.calendar'))
+

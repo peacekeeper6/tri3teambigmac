@@ -42,27 +42,6 @@ def error(e):
 
 @app.route('/displayannouncement')
 def displayannouncement():
-    # # defaults are empty, in case user data not found
-    # user = ""
-    # list_announcement = []
-    # print("in announcement")
-    # # grab user database object based on current login
-    # uo = user_by_id(current_user.userID)
-    #
-    # # if user object is found
-    # if uo is not None:
-    #     user = uo.read()  # extract user record (Dictionary)
-    #     if uo.announcement is None:
-    #         print("about to die")
-    #     for content in uo.announcement:  # loop through each user note
-    #         print(content)
-    #         content = content.read()  # extract note record (Dictionary)
-    #         content['content'] = markdown.markdown(content['content'])  # convert markdown to html
-    #         list_announcement.append(content)  # prepare note list for render_template
-    #     if list_announcement is not None:
-    #         list_announcement.reverse()
-    # # render user and note data in reverse chronological order(display latest notes rec on top)
-    # print(list_announcement)
     list_announcement = ann_all_alc()
     print(list_announcement)
     if list_announcement is not None:
