@@ -66,3 +66,17 @@ Everyone | Review Ticket Week 9 | [Week 9 Review Ticket](https://github.com/jean
 ### Week 10 Project Owner Meeting Notes
 * Incorporate ways for the users to have fun --> games, quizzes, etc
 * Clean up overall website so that each page within the site has similar layouts, colors, and themes.
+
+### Weeks 10 and 11
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Announcement Database | [Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/67) | Crossover and Teacher Grade
+Jun Lim | Deployment with AWS + Ocean Quiz Database  |[Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/65) | Crossover and Teacher Grade
+Connor Wang | Get Involved Page, Events Calendar Database  |[Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/66) | Crossover and Teacher Grade
+Aidan Wu | Timeline Database | [Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/64) | Crossover and Teacher Grade
+Everyone | Review Ticket Week 10 and 11, final 1 minute video | [Week 10 and 11 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/68) // [Link to 1 Minute Video](https://www.youtube.com/watch?v=twlw8reZ5E0) | Team Grading
+
+### Final Meeting with Sponsor Week 11
+* Met with our sponsor Project Protect Our Ocean club president to discuss and finalize the website
+* Everything looks good and has features as directed by the sponsor
+* Confirmed that the website is complete and ready to be used by the Del Norte Project Protect Our Ocean Club Officers and Members
