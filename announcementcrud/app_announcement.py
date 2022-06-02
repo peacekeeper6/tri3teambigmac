@@ -1,5 +1,5 @@
 import markdown
-from flask import Blueprint, render_template, request, redirect, url_for
+from flask import Blueprint, render_template, request, redirect, url_for, abort
 from flask_login import login_required, current_user
 from usercrud.query import user_by_id
 from usercrud.model import Announcement
@@ -13,6 +13,17 @@ app_announcement = Blueprint('announcement', __name__,
                              static_folder='static',
                              static_url_path='static')
 
+def admin():
+    try:
+        if current_user.privilege == 0:
+            return 0
+        elif current_user.privilege == 1:
+            return 1
+        else:
+            return 2
+    except AttributeError:
+        abort(404)
+
 
 def ann_all_alc():
     table = Announcement.query.all()
@@ -23,28 +34,32 @@ def ann_all_alc():
 @app_announcement.route('/')
 @login_required
 def announcement():
-    # defaults are empty, in case user data not found
-    user = ""
-    list_announcement = []
-    print("in announcement")
-    # grab user database object based on current login
-    uo = user_by_id(current_user.userID)
+    p = admin()
+    if p == 0:
+        # defaults are empty, in case user data not found
+        user = ""
+        list_announcement = []
+        print("in announcement")
+        # grab user database object based on current login
+        uo = user_by_id(current_user.userID)
 
-    # if user object is found
-    if uo is not None:
-        user = uo.read()  # extract user record (Dictionary)
-        if uo.announcement is None:
-            print("about to die")
-        for content in uo.announcement:  # loop through each user note
-            print(content)
-            content = content.read()  # extract note record (Dictionary)
-            content['content'] = markdown.markdown(content['content'])  # convert markdown to html
-            list_announcement.append(content)  # prepare note list for render_template
-        if list_announcement is not None:
-            list_announcement.reverse()
-    # render user and note data in reverse chronological order(display latest notes rec on top)
-    print(list_announcement)
-    return render_template('announcement.html', user=user, ann=list_announcement)
+        # if user object is found
+        if uo is not None:
+            user = uo.read()  # extract user record (Dictionary)
+            if uo.announcement is None:
+                print("about to die")
+            for content in uo.announcement:  # loop through each user note
+                print(content)
+                content = content.read()  # extract note record (Dictionary)
+                content['content'] = markdown.markdown(content['content'])  # convert markdown to html
+                list_announcement.append(content)  # prepare note list for render_template
+            if list_announcement is not None:
+                list_announcement.reverse()
+        # render user and note data in reverse chronological order(display latest notes rec on top)
+        print(list_announcement)
+        return render_template('announcement.html', user=user, ann=list_announcement)
+    else:
+        abort(404)
 
 
 # Notes create/add
