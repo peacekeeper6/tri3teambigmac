@@ -10,6 +10,7 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Weeks 2-6](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#weeks-2-6)
 - [Week 7 + 8](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-7)
 - [Week 9](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#week-9)
+- [Weeks 10 and 11](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#weeks-10-and-11)
 
 ### Runtime Link
 To be determined!
@@ -90,4 +91,13 @@ Jun Lim | Deployment with AWS + Calendar Updates  |[Link to review ticket](https
 Connor Wang | Get Involved Page, Updating Home Page  |[Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/55) | Crossover and Teacher Grade
 Aidan Wu | SQL Database, Notes Incorporation, Timeline  | [Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/53) | Crossover and Teacher Grade
 Everyone | Review Ticket Week 9 | [Week 9 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/52) | Team Grading
+
+### Weeks 10 and 11
+Name | Requirements | Evidence | Grade |
+---- | ------------ | -------- | ----- |
+Jean Kim | Announcement Database | [Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/67) | Crossover and Teacher Grade
+Jun Lim | Deployment with AWS + Ocean Quiz Database  |[Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/65) | Crossover and Teacher Grade
+Connor Wang | Get Involved Page, Events Calendar Database  |[Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/66) | Crossover and Teacher Grade
+Aidan Wu | Timeline Database | [Link to review ticket](https://github.com/jeankim05/tri3teambigmac/issues/64) | Crossover and Teacher Grade
+Everyone | Review Ticket Week 10 and 11, final 1 minute video | [Week 10 and 11 Review Ticket](https://github.com/jeankim05/tri3teambigmac/issues/68) // [Link to 1 Minute Video](https://www.youtube.com/watch?v=twlw8reZ5E0) | Team Grading
 
