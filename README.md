@@ -13,7 +13,7 @@ Jean Kim, Jun Lim, Connor Wang, Aidan Wu
 - [Weeks 10 and 11](https://github.com/jeankim05/tri3teambigmac/blob/main/README.md#weeks-10-and-11)
 
 ### Runtime Link
-To be determined!
+dnprojectpoo.cf
 
 ### Project Details, Guidelines, and Information
 Current Home Page
